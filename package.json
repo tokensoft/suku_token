@@ -1,0 +1,23 @@
+{
+  "name": "suku_token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "console": "truffle console",
+    "test": "npm run compile && scripts/test.sh",
+    "coverage": "solidity-coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ganache-cli": "^6.4.1",
+    "openzeppelin-solidity": "^2.1.3",
+    "solidity-coverage": "^0.5.11",
+    "truffle": "^5.0.6"
+  }
+}
