@@ -44,3 +44,15 @@ If a transfer is restricted, the code will follow the ERC1404 spec and revert th
 ## Lifting Restrictions
 
 At some point in the future, the Issuer can turn off the transfer restriction functionality.  Only the Issuer should have the ability to do this.
+
+# Testing
+You should be able to install dependencies and then run tests:
+```
+$ yarn
+$ yarn test
+```
+
+For unit test code coverage metrics:
+```
+$ yarn coverage
+```
