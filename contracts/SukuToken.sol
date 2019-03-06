@@ -2,8 +2,9 @@ pragma solidity >=0.4.25 <0.6.0;
 
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
+import "./Whitelistable.sol";
 
-contract SukuToken is ERC20, ERC20Detailed {
+contract SukuToken is ERC20, ERC20Detailed, Whitelistable {
 
     // Token Details
     string constant TOKEN_NAME = "SUKU";
@@ -24,5 +25,4 @@ contract SukuToken is ERC20, ERC20Detailed {
     {		
         _mint(msg.sender, TOKEN_SUPPLY);
     }
-
 }
