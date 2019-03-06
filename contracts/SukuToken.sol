@@ -1,10 +1,11 @@
 pragma solidity >=0.4.25 <0.6.0;
 
-import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
 import "./Whitelistable.sol";
+import "./Restrictable.sol";
+import "./ERC1404.sol";
 
-contract SukuToken is ERC20, ERC20Detailed, Whitelistable {
+contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
 
     // Token Details
     string constant TOKEN_NAME = "SUKU";
@@ -15,6 +16,13 @@ contract SukuToken is ERC20, ERC20Detailed, Whitelistable {
     uint256 constant BILLION = 1000000000;
     uint256 constant TOKEN_SUPPLY = 50 * BILLION * (10 ** uint256(TOKEN_DECIMALS));
 
+    // ERC1404 Error codes and messages
+    uint8 public constant SUCCESS_CODE = 0;
+    uint8 public constant FAILURE_NON_WHITELIST = 1;
+    string public constant SUCCESS_MESSAGE = "SUCCESS";
+    string public constant FAILURE_NON_WHITELIST_MESSAGE = "The transfer FROM and TO addresses are not on the same whitelist.";
+    string public constant UNKNOWN_ERROR = "Uknown Error Code";
+
 
     /**
     Constructor for the token to set readable details and mint all tokens
@@ -24,5 +32,75 @@ contract SukuToken is ERC20, ERC20Detailed, Whitelistable {
         ERC20Detailed(TOKEN_NAME, TOKEN_SYMBOL, TOKEN_DECIMALS)
     {		
         _mint(msg.sender, TOKEN_SUPPLY);
+    }
+
+    /**
+    This function detects whether a transfer should be restricted and not allowed.
+    If the function returns SUCCESS_CODE (0) then it should be allowed.
+     */
+    function detectTransferRestriction (address from, address to, uint256 )
+        public
+        view
+        returns (uint8)
+    {   
+        // If the restrictions have been disabled by the owner, the just return success
+        // Logic defined in Restrictable parent class
+        if(!isRestrictionEnabled()) {
+            return SUCCESS_CODE;
+        }
+
+        // Restrictions are enabled, so verify the from and to address are on the same white list.
+        // Logic defined in Whitelistable parent class
+        if(!checkSameWhitelist(from, to)) {
+            return FAILURE_NON_WHITELIST;
+        }
+
+        // If no restrictions were triggered return success
+        return SUCCESS_CODE;
+    }
+    
+    /**
+    This function allows a wallet or other client to get a human readable string to show
+    a user if a transfer was restricted.  It should return enough information for the user
+    to know why it failed.
+     */
+    function messageForTransferRestriction (uint8 restrictionCode)
+        public
+        view
+        returns (string memory)
+    {
+        if (restrictionCode == SUCCESS_CODE) {
+            string memory message = SUCCESS_MESSAGE;
+            return message;
+        }
+
+        if (restrictionCode == FAILURE_NON_WHITELIST) {
+            string memory message = FAILURE_NON_WHITELIST_MESSAGE;
+            return message;
+        }
+
+        return UNKNOWN_ERROR;
+    }
+
+    modifier notRestricted (address from, address to, uint256 value) {
+        uint8 restrictionCode = detectTransferRestriction(from, to, value);
+        require(restrictionCode == SUCCESS_CODE, messageForTransferRestriction(restrictionCode));
+        _;
+    }
+
+    function transfer (address to, uint256 value)
+        public
+        notRestricted(msg.sender, to, value)
+        returns (bool success)
+    {
+        success = super.transfer(to, value);
+    }
+
+    function transferFrom (address from, address to, uint256 value)
+        public
+        notRestricted(from, to, value)
+        returns (bool success)
+    {
+        success = super.transferFrom(from, to, value);
     }
 }

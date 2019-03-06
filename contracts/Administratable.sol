@@ -13,8 +13,8 @@ contract Administratable is Ownable {
     mapping (address => bool) public administrators;
 
     // Events to allow tracking add/remove.
-    event AdminAdded(address indexed addedAdmin);
-    event AdminRemoved(address indexed removedAdmin);
+    event AdminAdded(address indexed addedAdmin, address indexed addedBy);
+    event AdminRemoved(address indexed removedAdmin, address indexed removedBy);
 
     /**
     Function modifier to enforce administrative permissions.
@@ -39,7 +39,7 @@ contract Administratable is Ownable {
         administrators[adminToAdd] = true;
 
         // Emit the event for any watchers.
-        emit AdminAdded(adminToAdd);
+        emit AdminAdded(adminToAdd, msg.sender);
     }
 
     /**
@@ -50,7 +50,7 @@ contract Administratable is Ownable {
         administrators[adminToRemove] = false;
 
         // Emit the event for any watchers.
-        emit AdminRemoved(adminToRemove);
+        emit AdminRemoved(adminToRemove, msg.sender);
     }
 
 

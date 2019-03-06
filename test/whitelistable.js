@@ -116,4 +116,23 @@ contract('Whitelistable', (accounts) => {
     isValid = await tokenInstance.checkSameWhitelist.call(accounts[6], accounts[7])
     assert.equal(isValid, false, 'Two addresses on separate white lists should not be valid')
   })
+
+  it('should trigger events', async () => {
+    const tokenInstance = await SukuToken.deployed()
+
+    await tokenInstance.addAdmin(accounts[3], { from: accounts[0] })
+
+    // Check for initial add
+    let ret = await tokenInstance.addToWhitelist(accounts[3], 20, { from: accounts[1] })
+    expectEvent.inLogs(ret.logs, 'AddressAddedToWhitelist', { addedAddress: accounts[3], whitelist: '20', addedBy: accounts[1] })
+
+    // Adding to second whitelist should remove from first and add to second
+    ret = await tokenInstance.addToWhitelist(accounts[3], 30, { from: accounts[1] })
+    expectEvent.inLogs(ret.logs, 'AddressRemovedFromWhitelist', { removedAddress: accounts[3], whitelist: '20', removedBy: accounts[1] })
+    expectEvent.inLogs(ret.logs, 'AddressAddedToWhitelist', { addedAddress: accounts[3], whitelist: '30', addedBy: accounts[1] })
+
+    // Removing from list should just trigger removal
+    ret = await tokenInstance.removeFromWhitelist(accounts[3], { from: accounts[1] })
+    expectEvent.inLogs(ret.logs, 'AddressRemovedFromWhitelist', { removedAddress: accounts[3], whitelist: '30', removedBy: accounts[1] })
+  })
 })

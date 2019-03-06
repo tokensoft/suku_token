@@ -18,8 +18,8 @@ contract Whitelistable is Administratable {
     mapping (address => uint8) public addressWhitelists;
 
     // Events to allow tracking add/remove.
-    event AddressAddedToWhitelist(address indexed addedAddress, uint8 indexed whitelist);
-    event AddressRemovedFromWhitelist(address indexed removedAddress, uint8 indexed whitelist);
+    event AddressAddedToWhitelist(address indexed addedAddress, uint8 indexed whitelist, address indexed addedBy);
+    event AddressRemovedFromWhitelist(address indexed removedAddress, uint8 indexed whitelist, address indexed removedBy);
 
     /**
     Sets an address's white list ID.  Only administrators should be allowed to update this.
@@ -32,14 +32,14 @@ contract Whitelistable is Administratable {
         // If the previous whitelist existed then we want to indicate it has been removed
         if(previousWhitelist != NO_WHITELIST) {
             // Emit the event for tracking
-            emit AddressRemovedFromWhitelist(addressToAdd, previousWhitelist);
+            emit AddressRemovedFromWhitelist(addressToAdd, previousWhitelist, msg.sender);
         }
 
         // Set the address's white list ID
         addressWhitelists[addressToAdd] = whitelist;
 
         // Emit the event for tracking
-        emit AddressAddedToWhitelist(addressToAdd, whitelist);
+        emit AddressAddedToWhitelist(addressToAdd, whitelist, msg.sender);
     }
 
     /**
@@ -53,7 +53,7 @@ contract Whitelistable is Administratable {
         addressWhitelists[addressToRemove] = NO_WHITELIST;
 
         // Emit the event for tracking
-        emit AddressRemovedFromWhitelist(addressToRemove, previousWhitelist);
+        emit AddressRemovedFromWhitelist(addressToRemove, previousWhitelist, msg.sender);
     }
 
     /**

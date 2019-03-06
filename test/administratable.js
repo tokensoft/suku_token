@@ -45,7 +45,7 @@ contract('Administratable', (accounts) => {
     const tokenInstance = await SukuToken.deployed()
 
     let { logs } = await tokenInstance.addAdmin(accounts[3], { from: accounts[0] })
-    expectEvent.inLogs(logs, 'AdminAdded', { addedAdmin: accounts[3] })
+    expectEvent.inLogs(logs, 'AdminAdded', { addedAdmin: accounts[3], addedBy: accounts[0] })
   })
 
   it('should emit events for removing admins', async () => {
@@ -54,6 +54,6 @@ contract('Administratable', (accounts) => {
     await tokenInstance.addAdmin(accounts[3], { from: accounts[0] })
     const { logs } = await tokenInstance.removeAdmin(accounts[3], { from: accounts[0] })
 
-    expectEvent.inLogs(logs, 'AdminRemoved', { removedAdmin: accounts[3] })
+    expectEvent.inLogs(logs, 'AdminRemoved', { removedAdmin: accounts[3], removedBy: accounts[0] })
   })
 })
