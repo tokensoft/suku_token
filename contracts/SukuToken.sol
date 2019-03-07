@@ -21,7 +21,7 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
     uint8 public constant FAILURE_NON_WHITELIST = 1;
     string public constant SUCCESS_MESSAGE = "SUCCESS";
     string public constant FAILURE_NON_WHITELIST_MESSAGE = "The transfer FROM and TO addresses are not on the same whitelist.";
-    string public constant UNKNOWN_ERROR = "Uknown Error Code";
+    string public constant UNKNOWN_ERROR = "Unknown Error Code";
 
 
     /**
