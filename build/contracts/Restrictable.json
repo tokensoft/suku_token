@@ -117,22 +117,22 @@
   ],
   "bytecode": "0x60806040526001600060146101000a81548160ff021916908315150217905550336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36104fa806100ea6000396000f3fe608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a6424071461007d578063715018a6146100ac5780638da5cb5b146100c35780638f32d59b1461011a578063b86f8fd814610149578063f2fde38b14610186575b600080fd5b34801561008957600080fd5b506100926101d7565b604051808215151515815260200191505060405180910390f35b3480156100b857600080fd5b506100c16101ed565b005b3480156100cf57600080fd5b506100d86102bf565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012657600080fd5b5061012f6102e8565b604051808215151515815260200191505060405180910390f35b34801561015557600080fd5b506101846004803603602081101561016c57600080fd5b8101908080351515906020019092919050505061033f565b005b34801561019257600080fd5b506101d5600480360360208110156101a957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103b5565b005b60008060149054906101000a900460ff16905090565b6101f56102e8565b151561020057600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6103476102e8565b151561035257600080fd5b80600060146101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff168115157fab9dccb2bf06a75e7f221684f7f871aa881f62c6e153d501f64a4291795bec8760405160405180910390a350565b6103bd6102e8565b15156103c857600080fd5b6103d1816103d4565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561041057600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a723058202ced05cc13843a44c01e6ec3462c5a2aac632a5970c3fc1bc42db2041e39e66f0029",
   "deployedBytecode": "0x608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a6424071461007d578063715018a6146100ac5780638da5cb5b146100c35780638f32d59b1461011a578063b86f8fd814610149578063f2fde38b14610186575b600080fd5b34801561008957600080fd5b506100926101d7565b604051808215151515815260200191505060405180910390f35b3480156100b857600080fd5b506100c16101ed565b005b3480156100cf57600080fd5b506100d86102bf565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012657600080fd5b5061012f6102e8565b604051808215151515815260200191505060405180910390f35b34801561015557600080fd5b506101846004803603602081101561016c57600080fd5b8101908080351515906020019092919050505061033f565b005b34801561019257600080fd5b506101d5600480360360208110156101a957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103b5565b005b60008060149054906101000a900460ff16905090565b6101f56102e8565b151561020057600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6103476102e8565b151561035257600080fd5b80600060146101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff168115157fab9dccb2bf06a75e7f221684f7f871aa881f62c6e153d501f64a4291795bec8760405160405180910390a350565b6103bd6102e8565b15156103c857600080fd5b6103d1816103d4565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561041057600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a723058202ced05cc13843a44c01e6ec3462c5a2aac632a5970c3fc1bc42db2041e39e66f0029",
-  "sourceMap": "288:826:2:-;;;447:4;411:40;;;;;;;;;;;;;;;;;;;;524:10:7;515:6;;:19;;;;;;;;;;;;;;;;;;582:6;;;;;;;;;;;549:40;;578:1;549:40;;;;;;;;;;;;288:826:2;;;;;;",
-  "deployedSourceMap": "288:826:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;666:103;;8:9:-1;5:2;;;30:1;27;20:12;5:2;666:103:2;;;;;;;;;;;;;;;;;;;;;;;;;;;1347:137:7;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1347:137:7;;;;;;659:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;659:77:7;;;;;;;;;;;;;;;;;;;;;;;;;;;979:90;;8:9:-1;5:2;;;30:1;27;20:12;5:2;979:90:7;;;;;;;;;;;;;;;;;;;;;;;;;;;888:224:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;888:224:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;888:224:2;;;;;;;;;;;;;;;;;;;;;;1655:107:7;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1655:107:7;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1655:107:7;;;;;;;;;;;;;;;;;;;;;;666:103:2;719:4;742:20;;;;;;;;;;;735:27;;666:103;:::o;1347:137:7:-;863:9;:7;:9::i;:::-;855:18;;;;;;;;1445:1;1408:40;;1429:6;;;;;;;;;;;1408:40;;;;;;;;;;;;1475:1;1458:6;;:19;;;;;;;;;;;;;;;;;;1347:137::o;659:77::-;697:7;723:6;;;;;;;;;;;716:13;;659:77;:::o;979:90::-;1019:4;1056:6;;;;;;;;;;;1042:20;;:10;:20;;;1035:27;;979:90;:::o;888:224:2:-;863:9:7;:7;:9::i;:::-;855:18;;;;;;;;1007:7:2;984:20;;:30;;;;;;;;;;;;;;;;;;1094:10;1059:46;;1085:7;1059:46;;;;;;;;;;;;888:224;:::o;1655:107:7:-;863:9;:7;:9::i;:::-;855:18;;;;;;;;1727:28;1746:8;1727:18;:28::i;:::-;1655:107;:::o;1906:183::-;1999:1;1979:22;;:8;:22;;;;1971:31;;;;;;;;2046:8;2017:38;;2038:6;;;;;;;;;;;2017:38;;;;;;;;;;;;2074:8;2065:6;;:17;;;;;;;;;;;;;;;;;;1906:183;:::o",
+  "sourceMap": "288:826:3:-;;;447:4;411:40;;;;;;;;;;;;;;;;;;;;524:10:7;515:6;;:19;;;;;;;;;;;;;;;;;;582:6;;;;;;;;;;;549:40;;578:1;549:40;;;;;;;;;;;;288:826:3;;;;;;",
+  "deployedSourceMap": "288:826:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;666:103;;8:9:-1;5:2;;;30:1;27;20:12;5:2;666:103:3;;;;;;;;;;;;;;;;;;;;;;;;;;;1347:137:7;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1347:137:7;;;;;;659:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;659:77:7;;;;;;;;;;;;;;;;;;;;;;;;;;;979:90;;8:9:-1;5:2;;;30:1;27;20:12;5:2;979:90:7;;;;;;;;;;;;;;;;;;;;;;;;;;;888:224:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;888:224:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;888:224:3;;;;;;;;;;;;;;;;;;;;;;1655:107:7;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1655:107:7;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1655:107:7;;;;;;;;;;;;;;;;;;;;;;666:103:3;719:4;742:20;;;;;;;;;;;735:27;;666:103;:::o;1347:137:7:-;863:9;:7;:9::i;:::-;855:18;;;;;;;;1445:1;1408:40;;1429:6;;;;;;;;;;;1408:40;;;;;;;;;;;;1475:1;1458:6;;:19;;;;;;;;;;;;;;;;;;1347:137::o;659:77::-;697:7;723:6;;;;;;;;;;;716:13;;659:77;:::o;979:90::-;1019:4;1056:6;;;;;;;;;;;1042:20;;:10;:20;;;1035:27;;979:90;:::o;888:224:3:-;863:9:7;:7;:9::i;:::-;855:18;;;;;;;;1007:7:3;984:20;;:30;;;;;;;;;;;;;;;;;;1094:10;1059:46;;1085:7;1059:46;;;;;;;;;;;;888:224;:::o;1655:107:7:-;863:9;:7;:9::i;:::-;855:18;;;;;;;;1727:28;1746:8;1727:18;:28::i;:::-;1655:107;:::o;1906:183::-;1999:1;1979:22;;:8;:22;;;;1971:31;;;;;;;;2046:8;2017:38;;2038:6;;;;;;;;;;;2017:38;;;;;;;;;;;;2074:8;2065:6;;:17;;;;;;;;;;;;;;;;;;1906:183;:::o",
   "source": "pragma solidity >=0.4.25 <0.6.0;\n\nimport \"openzeppelin-solidity/contracts/ownership/Ownable.sol\";\n\n/**\nThis contract allows a restrictions to be enabled or disabled.  Only the owner of the contract\ncan turn off or on the restrictions.  All restrictions start off in an enabled state.\n */\ncontract Restrictable is Ownable {\n    // State variable to track whether restrictions are enabled.  Defaults to true.\n    bool private _restrictionsEnabled = true;\n\n    // Event emitted when enabled flag is updated\n    event RestrictionEnabledUpdated(bool indexed enabled, address indexed owner);\n\n    /**\n    View function to determine if restrictions are enabled\n     */\n    function isRestrictionEnabled() public view returns (bool) {\n        return _restrictionsEnabled;\n    }\n\n    /**\n    Function to update the enabled flag on restrictions.  Only the owner should be able to call.\n     */\n    function setRestrictionEnabled(bool enabled) public onlyOwner {\n        // Set the flag\n        _restrictionsEnabled = enabled;\n\n        // Trigger the event\n        emit RestrictionEnabledUpdated(enabled, msg.sender);\n    }\n}",
   "sourcePath": "/Users/james/Source/tokensoft/suku_token/contracts/Restrictable.sol",
   "ast": {
     "absolutePath": "/Users/james/Source/tokensoft/suku_token/contracts/Restrictable.sol",
     "exportedSymbols": {
       "Restrictable": [
-        183
+        207
       ]
     },
-    "id": 184,
+    "id": 208,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 144,
+        "id": 168,
         "literals": [
           "solidity",
           ">=",
@@ -143,16 +143,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:2"
+        "src": "0:32:3"
       },
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 145,
+        "id": 169,
         "nodeType": "ImportDirective",
-        "scope": 184,
-        "sourceUnit": 744,
-        "src": "34:63:2",
+        "scope": 208,
+        "sourceUnit": 789,
+        "src": "34:63:3",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -162,42 +162,42 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 146,
+              "id": 170,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 743,
-              "src": "313:7:2",
+              "referencedDeclaration": 788,
+              "src": "313:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$743",
+                "typeIdentifier": "t_contract$_Ownable_$788",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 147,
+            "id": 171,
             "nodeType": "InheritanceSpecifier",
-            "src": "313:7:2"
+            "src": "313:7:3"
           }
         ],
         "contractDependencies": [
-          743
+          788
         ],
         "contractKind": "contract",
         "documentation": "This contract allows a restrictions to be enabled or disabled.  Only the owner of the contract\ncan turn off or on the restrictions.  All restrictions start off in an enabled state.",
         "fullyImplemented": true,
-        "id": 183,
+        "id": 207,
         "linearizedBaseContracts": [
-          183,
-          743
+          207,
+          788
         ],
         "name": "Restrictable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 150,
+            "id": 174,
             "name": "_restrictionsEnabled",
             "nodeType": "VariableDeclaration",
-            "scope": 183,
-            "src": "411:40:2",
+            "scope": 207,
+            "src": "411:40:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -205,10 +205,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 148,
+              "id": 172,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "411:4:2",
+              "src": "411:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -217,14 +217,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "74727565",
-              "id": 149,
+              "id": 173,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "bool",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "447:4:2",
+              "src": "447:4:3",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
@@ -237,21 +237,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 156,
+            "id": 180,
             "name": "RestrictionEnabledUpdated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 155,
+              "id": 179,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 152,
+                  "id": 176,
                   "indexed": true,
                   "name": "enabled",
                   "nodeType": "VariableDeclaration",
-                  "scope": 156,
-                  "src": "540:20:2",
+                  "scope": 180,
+                  "src": "540:20:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -259,10 +259,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 151,
+                    "id": 175,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "540:4:2",
+                    "src": "540:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -273,12 +273,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 154,
+                  "id": 178,
                   "indexed": true,
                   "name": "owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 156,
-                  "src": "562:21:2",
+                  "scope": 180,
+                  "src": "562:21:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -286,10 +286,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 153,
+                    "id": 177,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "562:7:2",
+                    "src": "562:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -300,61 +300,61 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "539:45:2"
+              "src": "539:45:3"
             },
-            "src": "508:77:2"
+            "src": "508:77:3"
           },
           {
             "body": {
-              "id": 163,
+              "id": 187,
               "nodeType": "Block",
-              "src": "725:44:2",
+              "src": "725:44:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 161,
+                    "id": 185,
                     "name": "_restrictionsEnabled",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 150,
-                    "src": "742:20:2",
+                    "referencedDeclaration": 174,
+                    "src": "742:20:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 160,
-                  "id": 162,
+                  "functionReturnParameters": 184,
+                  "id": 186,
                   "nodeType": "Return",
-                  "src": "735:27:2"
+                  "src": "735:27:3"
                 }
               ]
             },
             "documentation": "View function to determine if restrictions are enabled",
-            "id": 164,
+            "id": 188,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isRestrictionEnabled",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 157,
+              "id": 181,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "695:2:2"
+              "src": "695:2:3"
             },
             "returnParameters": {
-              "id": 160,
+              "id": 184,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 159,
+                  "id": 183,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 164,
-                  "src": "719:4:2",
+                  "scope": 188,
+                  "src": "719:4:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -362,10 +362,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 158,
+                    "id": 182,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "719:4:2",
+                    "src": "719:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -375,36 +375,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "718:6:2"
+              "src": "718:6:3"
             },
-            "scope": 183,
-            "src": "666:103:2",
+            "scope": 207,
+            "src": "666:103:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 181,
+              "id": 205,
               "nodeType": "Block",
-              "src": "950:162:2",
+              "src": "950:162:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 173,
+                    "id": 197,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 171,
+                      "id": 195,
                       "name": "_restrictionsEnabled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 150,
-                      "src": "984:20:2",
+                      "referencedDeclaration": 174,
+                      "src": "984:20:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -414,26 +414,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 172,
+                      "id": 196,
                       "name": "enabled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 166,
-                      "src": "1007:7:2",
+                      "referencedDeclaration": 190,
+                      "src": "1007:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "984:30:2",
+                    "src": "984:30:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 174,
+                  "id": 198,
                   "nodeType": "ExpressionStatement",
-                  "src": "984:30:2"
+                  "src": "984:30:3"
                 },
                 {
                   "eventCall": {
@@ -441,12 +441,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 176,
+                        "id": 200,
                         "name": "enabled",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 166,
-                        "src": "1085:7:2",
+                        "referencedDeclaration": 190,
+                        "src": "1085:7:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -456,18 +456,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 177,
+                          "id": 201,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1317,
-                          "src": "1094:3:2",
+                          "referencedDeclaration": 1362,
+                          "src": "1094:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 178,
+                        "id": 202,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -475,7 +475,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1094:10:2",
+                        "src": "1094:10:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -493,18 +493,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 175,
+                      "id": 199,
                       "name": "RestrictionEnabledUpdated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 156,
-                      "src": "1059:25:2",
+                      "referencedDeclaration": 180,
+                      "src": "1059:25:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_address_$returns$__$",
                         "typeString": "function (bool,address)"
                       }
                     },
-                    "id": 179,
+                    "id": 203,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -512,56 +512,56 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1059:46:2",
+                    "src": "1059:46:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 180,
+                  "id": 204,
                   "nodeType": "EmitStatement",
-                  "src": "1054:51:2"
+                  "src": "1054:51:3"
                 }
               ]
             },
             "documentation": "Function to update the enabled flag on restrictions.  Only the owner should be able to call.",
-            "id": 182,
+            "id": 206,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 169,
+                "id": 193,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 168,
+                  "id": 192,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 677,
-                  "src": "940:9:2",
+                  "referencedDeclaration": 722,
+                  "src": "940:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "940:9:2"
+                "src": "940:9:3"
               }
             ],
             "name": "setRestrictionEnabled",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 167,
+              "id": 191,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 166,
+                  "id": 190,
                   "name": "enabled",
                   "nodeType": "VariableDeclaration",
-                  "scope": 182,
-                  "src": "919:12:2",
+                  "scope": 206,
+                  "src": "919:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -569,10 +569,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 165,
+                    "id": 189,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "919:4:2",
+                    "src": "919:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -582,39 +582,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "918:14:2"
+              "src": "918:14:3"
             },
             "returnParameters": {
-              "id": 170,
+              "id": 194,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "950:0:2"
+              "src": "950:0:3"
             },
-            "scope": 183,
-            "src": "888:224:2",
+            "scope": 207,
+            "src": "888:224:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 184,
-        "src": "288:826:2"
+        "scope": 208,
+        "src": "288:826:3"
       }
     ],
-    "src": "0:1114:2"
+    "src": "0:1114:3"
   },
   "legacyAST": {
     "absolutePath": "/Users/james/Source/tokensoft/suku_token/contracts/Restrictable.sol",
     "exportedSymbols": {
       "Restrictable": [
-        183
+        207
       ]
     },
-    "id": 184,
+    "id": 208,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 144,
+        "id": 168,
         "literals": [
           "solidity",
           ">=",
@@ -625,16 +625,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:2"
+        "src": "0:32:3"
       },
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 145,
+        "id": 169,
         "nodeType": "ImportDirective",
-        "scope": 184,
-        "sourceUnit": 744,
-        "src": "34:63:2",
+        "scope": 208,
+        "sourceUnit": 789,
+        "src": "34:63:3",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -644,42 +644,42 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 146,
+              "id": 170,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 743,
-              "src": "313:7:2",
+              "referencedDeclaration": 788,
+              "src": "313:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$743",
+                "typeIdentifier": "t_contract$_Ownable_$788",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 147,
+            "id": 171,
             "nodeType": "InheritanceSpecifier",
-            "src": "313:7:2"
+            "src": "313:7:3"
           }
         ],
         "contractDependencies": [
-          743
+          788
         ],
         "contractKind": "contract",
         "documentation": "This contract allows a restrictions to be enabled or disabled.  Only the owner of the contract\ncan turn off or on the restrictions.  All restrictions start off in an enabled state.",
         "fullyImplemented": true,
-        "id": 183,
+        "id": 207,
         "linearizedBaseContracts": [
-          183,
-          743
+          207,
+          788
         ],
         "name": "Restrictable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 150,
+            "id": 174,
             "name": "_restrictionsEnabled",
             "nodeType": "VariableDeclaration",
-            "scope": 183,
-            "src": "411:40:2",
+            "scope": 207,
+            "src": "411:40:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -687,10 +687,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 148,
+              "id": 172,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "411:4:2",
+              "src": "411:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -699,14 +699,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "74727565",
-              "id": 149,
+              "id": 173,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "bool",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "447:4:2",
+              "src": "447:4:3",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
@@ -719,21 +719,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 156,
+            "id": 180,
             "name": "RestrictionEnabledUpdated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 155,
+              "id": 179,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 152,
+                  "id": 176,
                   "indexed": true,
                   "name": "enabled",
                   "nodeType": "VariableDeclaration",
-                  "scope": 156,
-                  "src": "540:20:2",
+                  "scope": 180,
+                  "src": "540:20:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -741,10 +741,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 151,
+                    "id": 175,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "540:4:2",
+                    "src": "540:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -755,12 +755,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 154,
+                  "id": 178,
                   "indexed": true,
                   "name": "owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 156,
-                  "src": "562:21:2",
+                  "scope": 180,
+                  "src": "562:21:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -768,10 +768,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 153,
+                    "id": 177,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "562:7:2",
+                    "src": "562:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -782,61 +782,61 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "539:45:2"
+              "src": "539:45:3"
             },
-            "src": "508:77:2"
+            "src": "508:77:3"
           },
           {
             "body": {
-              "id": 163,
+              "id": 187,
               "nodeType": "Block",
-              "src": "725:44:2",
+              "src": "725:44:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 161,
+                    "id": 185,
                     "name": "_restrictionsEnabled",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 150,
-                    "src": "742:20:2",
+                    "referencedDeclaration": 174,
+                    "src": "742:20:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 160,
-                  "id": 162,
+                  "functionReturnParameters": 184,
+                  "id": 186,
                   "nodeType": "Return",
-                  "src": "735:27:2"
+                  "src": "735:27:3"
                 }
               ]
             },
             "documentation": "View function to determine if restrictions are enabled",
-            "id": 164,
+            "id": 188,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isRestrictionEnabled",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 157,
+              "id": 181,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "695:2:2"
+              "src": "695:2:3"
             },
             "returnParameters": {
-              "id": 160,
+              "id": 184,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 159,
+                  "id": 183,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 164,
-                  "src": "719:4:2",
+                  "scope": 188,
+                  "src": "719:4:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -844,10 +844,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 158,
+                    "id": 182,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "719:4:2",
+                    "src": "719:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -857,36 +857,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "718:6:2"
+              "src": "718:6:3"
             },
-            "scope": 183,
-            "src": "666:103:2",
+            "scope": 207,
+            "src": "666:103:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 181,
+              "id": 205,
               "nodeType": "Block",
-              "src": "950:162:2",
+              "src": "950:162:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 173,
+                    "id": 197,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 171,
+                      "id": 195,
                       "name": "_restrictionsEnabled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 150,
-                      "src": "984:20:2",
+                      "referencedDeclaration": 174,
+                      "src": "984:20:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -896,26 +896,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 172,
+                      "id": 196,
                       "name": "enabled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 166,
-                      "src": "1007:7:2",
+                      "referencedDeclaration": 190,
+                      "src": "1007:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "984:30:2",
+                    "src": "984:30:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 174,
+                  "id": 198,
                   "nodeType": "ExpressionStatement",
-                  "src": "984:30:2"
+                  "src": "984:30:3"
                 },
                 {
                   "eventCall": {
@@ -923,12 +923,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 176,
+                        "id": 200,
                         "name": "enabled",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 166,
-                        "src": "1085:7:2",
+                        "referencedDeclaration": 190,
+                        "src": "1085:7:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -938,18 +938,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 177,
+                          "id": 201,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1317,
-                          "src": "1094:3:2",
+                          "referencedDeclaration": 1362,
+                          "src": "1094:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 178,
+                        "id": 202,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -957,7 +957,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1094:10:2",
+                        "src": "1094:10:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -975,18 +975,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 175,
+                      "id": 199,
                       "name": "RestrictionEnabledUpdated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 156,
-                      "src": "1059:25:2",
+                      "referencedDeclaration": 180,
+                      "src": "1059:25:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_address_$returns$__$",
                         "typeString": "function (bool,address)"
                       }
                     },
-                    "id": 179,
+                    "id": 203,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -994,56 +994,56 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1059:46:2",
+                    "src": "1059:46:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 180,
+                  "id": 204,
                   "nodeType": "EmitStatement",
-                  "src": "1054:51:2"
+                  "src": "1054:51:3"
                 }
               ]
             },
             "documentation": "Function to update the enabled flag on restrictions.  Only the owner should be able to call.",
-            "id": 182,
+            "id": 206,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 169,
+                "id": 193,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 168,
+                  "id": 192,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 677,
-                  "src": "940:9:2",
+                  "referencedDeclaration": 722,
+                  "src": "940:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "940:9:2"
+                "src": "940:9:3"
               }
             ],
             "name": "setRestrictionEnabled",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 167,
+              "id": 191,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 166,
+                  "id": 190,
                   "name": "enabled",
                   "nodeType": "VariableDeclaration",
-                  "scope": 182,
-                  "src": "919:12:2",
+                  "scope": 206,
+                  "src": "919:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1051,10 +1051,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 165,
+                    "id": 189,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "919:4:2",
+                    "src": "919:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1064,26 +1064,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "918:14:2"
+              "src": "918:14:3"
             },
             "returnParameters": {
-              "id": 170,
+              "id": 194,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "950:0:2"
+              "src": "950:0:3"
             },
-            "scope": 183,
-            "src": "888:224:2",
+            "scope": 207,
+            "src": "888:224:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 184,
-        "src": "288:826:2"
+        "scope": 208,
+        "src": "288:826:3"
       }
     ],
-    "src": "0:1114:2"
+    "src": "0:1114:3"
   },
   "compiler": {
     "name": "solc",
@@ -1091,7 +1091,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-06T16:12:04.857Z",
+  "updatedAt": "2019-03-07T00:52:18.947Z",
   "devdoc": {
     "methods": {
       "isOwner()": {

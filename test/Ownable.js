@@ -1,5 +1,4 @@
 /* global artifacts contract it assert */
-const { shouldFail, expectEvent } = require('openzeppelin-test-helpers')
 const SukuToken = artifacts.require('SukuToken')
 
 /**
