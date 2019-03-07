@@ -43,7 +43,7 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
         view
         returns (uint8)
     {   
-        // If the restrictions have been disabled by the owner, the just return success
+        // If the restrictions have been disabled by the owner, then just return success
         // Logic defined in Restrictable parent class
         if(!isRestrictionEnabled()) {
             return SUCCESS_CODE;
@@ -70,22 +70,21 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
         returns (string memory)
     {
         if (restrictionCode == SUCCESS_CODE) {
-            string memory message = SUCCESS_MESSAGE;
-            return message;
+            return SUCCESS_MESSAGE;
         }
 
         if (restrictionCode == FAILURE_NON_WHITELIST) {
-            string memory message = FAILURE_NON_WHITELIST_MESSAGE;
-            return message;
+            return FAILURE_NON_WHITELIST_MESSAGE;
         }
 
+        // An unknown error code was passed in.
         return UNKNOWN_ERROR;
     }
 
     /**
     Evaluates whether a transfer should be allowed or not.
      */
-    modifier notRestricted (address from, address to, uint256 value) {
+    modifier notRestricted (address from, address to, uint256 value) {        
         uint8 restrictionCode = detectTransferRestriction(from, to, value);
         require(restrictionCode == SUCCESS_CODE, messageForTransferRestriction(restrictionCode));
         _;
