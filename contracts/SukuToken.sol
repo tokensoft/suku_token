@@ -82,12 +82,18 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
         return UNKNOWN_ERROR;
     }
 
+    /**
+    Evaluates whether a transfer should be allowed or not.
+     */
     modifier notRestricted (address from, address to, uint256 value) {
         uint8 restrictionCode = detectTransferRestriction(from, to, value);
         require(restrictionCode == SUCCESS_CODE, messageForTransferRestriction(restrictionCode));
         _;
     }
 
+    /**
+    Overrides the parent class token transfer function to enforce restrictions.
+     */
     function transfer (address to, uint256 value)
         public
         notRestricted(msg.sender, to, value)
@@ -96,6 +102,9 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
         success = super.transfer(to, value);
     }
 
+    /**
+    Overrides the parent class token transferFrom function to enforce restrictions.
+     */
     function transferFrom (address from, address to, uint256 value)
         public
         notRestricted(from, to, value)
