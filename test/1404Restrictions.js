@@ -5,7 +5,7 @@ const SUCCESS_CODE = 0
 const FAILURE_NON_WHITELIST = 1
 const SUCCESS_MESSAGE = 'SUCCESS'
 const FAILURE_NON_WHITELIST_MESSAGE = 'The transfer FROM and TO addresses are not on the same whitelist.'
-const UNKNOWN_ERROR = 'Uknown Error Code'
+const UNKNOWN_ERROR = 'Unknown Error Code'
 
 contract('1404 Restrictions', (accounts) => {
   it('should deploy', async () => {

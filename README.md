@@ -14,8 +14,6 @@ All token features will be determined at deploy time, locking them in place.
 
 On deployment, all tokens will be transferred to the account that deployed the token.
 
-There will be **NO** functionality for minting/burning tokens after the initial creation.
-
 ## Users
 There will be a few different actors in the eco-system.
 
@@ -32,6 +30,8 @@ Once and account has been added to the Administrators list, the administrator ca
 ## White Lists
 Before tokens can be transferred to a new address, the destination address must be added to the same white list that the sender belongs to.  If this is not done in advance, the transfer functionality will fail and the transaction will revert.
 
+While it is enabled, the only exception to the whitelist logic is the owner account.  They will have the ability to transfer tokens to any address.
+
 Notes
  - Any address can only be a member of one white list at a time.
  - Any number of whitelists can exist allowing groups of addresses to transfer among that list.
@@ -44,6 +44,12 @@ If a transfer is restricted, the code will follow the ERC1404 spec and revert th
 ## Lifting Restrictions
 
 At some point in the future, the Issuer can turn off the transfer restriction functionality.  Only the Issuer should have the ability to do this.
+
+## Revocations
+
+When the contract is deployed, the owner will have the ability to revoke tokens.  When the owner revokes tokens, they will specify a target account and an amount of tokens.  This amount of tokens will then be revoked from the target account back into the owners account.  This functionality can be used to take ownership of tokens for any error scenarios.
+
+At any point in the future, the owner can disable this functionality.  Once the owner disables the revocation functionality it will be turned off forever and cannot be turned back on.
 
 # Testing
 You should be able to install dependencies and then run tests:

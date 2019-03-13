@@ -4,8 +4,9 @@ import "openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
 import "./Whitelistable.sol";
 import "./Restrictable.sol";
 import "./ERC1404.sol";
+import "./Revocable.sol";
 
-contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
+contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable, Revocable {
 
     // Token Details
     string constant TOKEN_NAME = "SUKU";
@@ -42,10 +43,15 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
         public
         view
         returns (uint8)
-    {   
+    {               
         // If the restrictions have been disabled by the owner, then just return success
         // Logic defined in Restrictable parent class
         if(!isRestrictionEnabled()) {
+            return SUCCESS_CODE;
+        }
+
+        // If the contract owner is transferring, then ignore reistrictions        
+        if(from == owner()) {
             return SUCCESS_CODE;
         }
 
