@@ -72,7 +72,7 @@ contract('1404 Restrictions', (accounts) => {
     assert.equal(failureMessage, FAILURE_NON_WHITELIST_MESSAGE, 'Failure message should be valid for restriction')
 
     // Lift the restriction
-    await tokenInstance.setRestrictionEnabled(false, { from: accounts[0] })
+    await tokenInstance.disableRestrictions({ from: accounts[0] })
 
     // Should be successful now
     failureCode = await tokenInstance.detectTransferRestriction.call(accounts[7], accounts[8], 100)

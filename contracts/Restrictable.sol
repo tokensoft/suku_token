@@ -21,13 +21,14 @@ contract Restrictable is Ownable {
     }
 
     /**
-    Function to update the enabled flag on restrictions.  Only the owner should be able to call.
+    Function to update the enabled flag on restrictions to disabled.  Only the owner should be able to call.
+    This is a permanent change that cannot be undone
      */
-    function setRestrictionEnabled(bool enabled) public onlyOwner {
+    function disableRestrictions() public onlyOwner {
         // Set the flag
-        _restrictionsEnabled = enabled;
+        _restrictionsEnabled = false;
 
         // Trigger the event
-        emit RestrictionEnabledUpdated(enabled, msg.sender);
+        emit RestrictionEnabledUpdated(false, msg.sender);
     }
 }

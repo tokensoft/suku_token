@@ -4,9 +4,8 @@ import "openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
 import "./Whitelistable.sol";
 import "./Restrictable.sol";
 import "./ERC1404.sol";
-import "./Revocable.sol";
 
-contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable, Revocable {
+contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
 
     // Token Details
     string constant TOKEN_NAME = "SUKU";
