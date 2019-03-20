@@ -38,7 +38,7 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
     This function detects whether a transfer should be restricted and not allowed.
     If the function returns SUCCESS_CODE (0) then it should be allowed.
      */
-    function detectTransferRestriction (address from, address to, uint256 )
+    function detectTransferRestriction (address from, address to, uint256 value)
         public
         view
         returns (uint8)
