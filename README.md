@@ -2,7 +2,7 @@
 ERC20 Token with 1404 Restrictions
 
 ## Use Case
-The SUKU token is an ERC20 compatible token with transfer restrictions added that follow the ERC1404 standard.  1404 Restrictions will use whitelists to segregate groups of accounts so they are only allowed to transfer between each other.  At some point in the future, the transfer restrictions will need to be lifted and let any transfers to succeed to/from any accounts.
+The SUKU token is an ERC20 compatible token with transfer restrictions added that follow the ERC1404 standard.  1404 Restrictions will use whitelists to segregate groups of accounts so they are only allowed to transfer to designated destination addresses.  At some point in the future, the transfer restrictions will need to be lifted and let any transfers to succeed to/from any accounts.
 
 ## Token
 All token features will be determined at deploy time, locking them in place.
@@ -13,6 +13,8 @@ All token features will be determined at deploy time, locking them in place.
  - Decimals
 
 On deployment, all tokens will be transferred to the account that deployed the token.
+
+There will be **NO** functionality for minting/burning tokens after the initial creation of the contract.
 
 ## Users
 There will be a few different actors in the eco-system.
@@ -28,14 +30,23 @@ The Issuer account can add and remove other account addresses to a list of Admin
 Once and account has been added to the Administrators list, the administrator can add/remove accounts to/from any of the whitelists.  Only Administrators should have the ability to do this.
 
 ## White Lists
-Before tokens can be transferred to a new address, the destination address must be added to the same white list that the sender belongs to.  If this is not done in advance, the transfer functionality will fail and the transaction will revert.
+Before tokens can be transferred to a new address, the destination address must validated that the source is allowed to send to that address.  If this is not done in advance, the transfer functionality will fail and the transaction will revert.
 
 While it is enabled, the only exception to the whitelist logic is the owner account.  They will have the ability to transfer tokens to any address.
 
-Notes
- - Any address can only be a member of one white list at a time.
- - Any number of whitelists can exist allowing groups of addresses to transfer among that list.
- - No transfers will be allowed across whitelists.
+Any address can only be a member of one white list at any point in time.  If an administrator adds any address to a new whitelist, it will no longer be a member of the previous whitelist it was on.  Adding an address to a whitelist of ID 0 will remove it from all whitelists, as whitelist ID 0 is invalid.
+
+Any whitelist can be configured to have multiple Outbound Whitelists.  When a transfer is initiated, the restriction logic will first determine the sourece/destination address's whitelists.  Then it will determine if the source whitelist is configured to allow transactions to the destination whitelist.  The transfer will be restricted if the source whitelist is not configured to send to the destination whitelist.
+
+Example
+- Whitelist A is only allowed to send to iteself.
+- Whitelist B is allowed to send to itself and whitelist A.
+- Whitelist C is allowed to send to itself and whitelists A and B.
+- Whitelist D is not allowed to transfer to any whitelist, including itself.
+
+A total of 255 whitelists can be created, each with the ability to restrict transfers to all other whitelists.
+
+By default, any whitelist will be allowed to transfer between source and destination addresses within the same whitelist.  Only the Issuer will have the ability modify a whitelist beyond the default configuration to add or remove outbound whitelists.
 
 ## Restrictions
 
