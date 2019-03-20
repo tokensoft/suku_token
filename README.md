@@ -43,13 +43,7 @@ If a transfer is restricted, the code will follow the ERC1404 spec and revert th
 
 ## Lifting Restrictions
 
-At some point in the future, the Issuer can turn off the transfer restriction functionality.  Only the Issuer should have the ability to do this.
-
-## Revocations
-
-When the contract is deployed, the owner will have the ability to revoke tokens.  When the owner revokes tokens, they will specify a target account and an amount of tokens.  This amount of tokens will then be revoked from the target account back into the owners account.  This functionality can be used to take ownership of tokens for any error scenarios.
-
-At any point in the future, the owner can disable this functionality.  Once the owner disables the revocation functionality it will be turned off forever and cannot be turned back on.
+At some point in the future, the Issuer can turn off the transfer restriction functionality.  Only the Issuer should have the ability to do this.  This is a one-time and permanent change that cannot be undone.  Once resitrctions are disabled, all transfers to and from any address are allowed.
 
 # Testing
 You should be able to install dependencies and then run tests:
