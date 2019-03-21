@@ -20,7 +20,7 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
     uint8 public constant SUCCESS_CODE = 0;
     uint8 public constant FAILURE_NON_WHITELIST = 1;
     string public constant SUCCESS_MESSAGE = "SUCCESS";
-    string public constant FAILURE_NON_WHITELIST_MESSAGE = "The transfer FROM and TO addresses are not on the same whitelist.";
+    string public constant FAILURE_NON_WHITELIST_MESSAGE = "The transfer was restricted due to white list configuration.";
     string public constant UNKNOWN_ERROR = "Unknown Error Code";
 
 
@@ -38,7 +38,7 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
     This function detects whether a transfer should be restricted and not allowed.
     If the function returns SUCCESS_CODE (0) then it should be allowed.
      */
-    function detectTransferRestriction (address from, address to, uint256 )
+    function detectTransferRestriction (address from, address to, uint256)
         public
         view
         returns (uint8)
@@ -54,9 +54,9 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
             return SUCCESS_CODE;
         }
 
-        // Restrictions are enabled, so verify the from and to address are on the same white list.
+        // Restrictions are enabled, so verify the whitelist config allows the transfer.
         // Logic defined in Whitelistable parent class
-        if(!checkSameWhitelist(from, to)) {
+        if(!checkWhitelistAllowed(from, to)) {
             return FAILURE_NON_WHITELIST;
         }
 

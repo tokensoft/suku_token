@@ -5,7 +5,7 @@ import "openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
 import "./Administratable.sol";
 
 /**
-Keeps track of whitelists and can check if sender and reciever are both in the same whitelist.
+Keeps track of whitelists and can check if sender and reciever are configured to allow a transfer.
 Only administrators can update the whitelists.
 Any address can only be a member of one whitelist at a time.
  */
@@ -14,16 +14,21 @@ contract Whitelistable is Administratable {
     uint8 constant NO_WHITELIST = 0;
 
     // The mapping to keep track of which whitelist any address belongs to.
-    // 0 is reserved for no whitelsit.
+    // 0 is reserved for no whitelist and is the default for all addresses.
     mapping (address => uint8) public addressWhitelists;
+
+    // The mapping to keep track of each whitelist's outbound whitelist flags.
+    // Boolean flag indicates whether outbound transfers are enabled.
+    mapping(uint8 => mapping (uint8 => bool)) public outboundWhitelistsEnabled;
 
     // Events to allow tracking add/remove.
     event AddressAddedToWhitelist(address indexed addedAddress, uint8 indexed whitelist, address indexed addedBy);
     event AddressRemovedFromWhitelist(address indexed removedAddress, uint8 indexed whitelist, address indexed removedBy);
+    event OutboundWhitelistUpdated(uint8 indexed sourceWhitelist, uint8 indexed destinationWhitelist, bool from, bool to);
 
     /**
     Sets an address's white list ID.  Only administrators should be allowed to update this.
-    If an address is on an existing whitelist, it will just get updated.
+    If an address is on an existing whitelist, it will just get updated to the new value (removed from previous).
      */
     function addToWhitelist(address addressToAdd, uint8 whitelist) public onlyAdministrator {
         // Save off the previous white list
@@ -57,9 +62,24 @@ contract Whitelistable is Administratable {
     }
 
     /**
-    Determine if the a sender and receiver are both on the same whitelist.
+    Sets the flag to indicate whether source whitelist is allowed to send to destination whitelist.
      */
-    function checkSameWhitelist(address sender, address receiver) public view returns (bool) {
+    function updateOutboundWhitelistEnabled(uint8 sourceWhitelist, uint8 destinationWhitelist, bool newEnabledValue) public onlyAdministrator {
+        // Get the old enabled flag
+        bool oldEnabledValue = outboundWhitelistsEnabled[sourceWhitelist][destinationWhitelist];
+
+        // Update to the new value
+        outboundWhitelistsEnabled[sourceWhitelist][destinationWhitelist] = newEnabledValue;
+
+        // Emit event for tracking
+        emit OutboundWhitelistUpdated(sourceWhitelist, destinationWhitelist, oldEnabledValue, newEnabledValue);
+    }
+
+    /**
+    Determine if the a sender is allowed to send to the receiver.
+    The source whitelist must be enabled to send to the whitelist where the receive exists.
+     */
+    function checkWhitelistAllowed(address sender, address receiver) public view returns (bool) {
         // First get each address white list
         uint8 senderWhiteList = addressWhitelists[sender];
         uint8 receiverWhiteList = addressWhitelists[receiver];
@@ -69,7 +89,7 @@ contract Whitelistable is Administratable {
             return false;
         }
 
-        // Determine if the whitelists match
-        return senderWhiteList == receiverWhiteList;
+        // Determine if the sending whitelist is allowed to send to the destination whitelist        
+        return outboundWhitelistsEnabled[senderWhiteList][receiverWhiteList];
     }
 }
