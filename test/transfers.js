@@ -2,7 +2,7 @@
 const { shouldFail } = require('openzeppelin-test-helpers')
 const SukuToken = artifacts.require('SukuToken')
 
-const FAILURE_NON_WHITELIST_MESSAGE = 'The transfer FROM and TO addresses are not on the same whitelist.'
+const FAILURE_NON_WHITELIST_MESSAGE = 'The transfer was restricted due to white list configuration.'
 
 contract('Transfers', (accounts) => {
   it('should deploy', async () => {
@@ -35,15 +35,22 @@ contract('Transfers', (accounts) => {
     await tokenInstance.approve(accounts[2], 100, { from: accounts[5] })
     await shouldFail.reverting.withMessage(tokenInstance.transferFrom(accounts[5], accounts[2], 100, { from: accounts[2] }), FAILURE_NON_WHITELIST_MESSAGE)
 
-    // Add address 0 to whitelist
+    // Add address 5 to whitelist
     await tokenInstance.addToWhitelist(accounts[5], 20, { from: accounts[1] })
 
     // Try to send to account 2 should still fail
     await shouldFail.reverting.withMessage(tokenInstance.transfer(accounts[2], 100, { from: accounts[5] }), FAILURE_NON_WHITELIST_MESSAGE)
     await shouldFail.reverting.withMessage(tokenInstance.transferFrom(accounts[5], accounts[2], 100, { from: accounts[2] }), FAILURE_NON_WHITELIST_MESSAGE)
 
-    // Remove address 2 to whitelist
+    // Move address 2 to whitelist
     await tokenInstance.addToWhitelist(accounts[2], 20, { from: accounts[1] })
+
+    // Try to send to account 2 should still fail
+    await shouldFail.reverting.withMessage(tokenInstance.transfer(accounts[2], 100, { from: accounts[5] }), FAILURE_NON_WHITELIST_MESSAGE)
+    await shouldFail.reverting.withMessage(tokenInstance.transferFrom(accounts[5], accounts[2], 100, { from: accounts[2] }), FAILURE_NON_WHITELIST_MESSAGE)
+
+    // Now allow whitelist 20 to send to itself
+    await tokenInstance.updateOutboundWhitelistEnabled(20, 20, true, { from: accounts[1] })
 
     // Should succeed
     await tokenInstance.transfer(accounts[2], 100, { from: accounts[5] })
