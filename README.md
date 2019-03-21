@@ -44,7 +44,7 @@ Example
 - Whitelist C is allowed to send to itself and whitelists A and B.
 - Whitelist D is not allowed to transfer to any whitelist, including itself.
 
-<p align="center" style="padding-top: 5px; padding-bottom: 5px;">
+<p align="center" style="padding-top: 10px; padding-bottom: 5px;">
   <img src="example_whitelist.png">
 </p>
 
