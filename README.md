@@ -30,7 +30,7 @@ The Issuer account can add and remove other account addresses to a list of Admin
 Once an account has been added to the Administrators list, the administrator can add/remove accounts to/from any of the whitelists.  They can also enable/disable transfers between whitelists.  Only Administrators should have the ability to do this.
 
 ## White Lists
-Before tokens can be transferred to a new address, the destination address must validated that the source is allowed to send to that address.  If the sending client does not check this in advance and sends an invalid transfer, the transfer functionality will fail and the transaction will revert.
+Before tokens can be transferred to a new address, it must be validated that the source is allowed to send to that desitnation address.  If the sending client does not check this in advance and sends an invalid transfer, the transfer functionality will fail and the transaction will revert.
 
 The Issuer account will have the ability to transfer tokens to any address, regardless of whether restrictions are enabled or the whitelist configuration state.  The Issuer is not gated by any of the restriction logic.
 
@@ -44,11 +44,14 @@ Example
 - Whitelist C is allowed to send to itself and whitelists A and B.
 - Whitelist D is not allowed to transfer to any whitelist, including itself.
 
-![Example](example_whitelist.png)
+<p align="center" style="padding-top: 5px; padding-bottom: 5px;">
+  <img src="example_whitelist.png">
+</p>
+
 
 A total of 255 whitelists can be created, each with the ability to restrict transfers to all other whitelists.
 
-By default, all whitelists will **NOT** be allowed to transfer between source and destination addresses within the same whitelist.  This must explicitly be enabled.  By default no whitelists allow any transfers.
+By default, all whitelists will **NOT** be allowed to transfer between source and destination addresses within the same whitelist.  This must explicitly be enabled.  By default all whitelists block all transfers.
 
 Administrators will have the ability modify a whitelist beyond the default configuration to add or remove outbound whitelists.
 
