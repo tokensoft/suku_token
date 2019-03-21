@@ -39,7 +39,7 @@ Any address can only be a member of one whitelist at any point in time. If an ad
 Any whitelist can be configured to have multiple Outbound Whitelists. When a transfer is initiated, the restriction logic will first determine the whitelist that both the source and destination belong to. Then it will determine if the source whitelist is configured to allow transactions to the destination whitelist. If either address is on whitelist 0 the transfer will be restricted. Also, the transfer will be restricted if the source whitelist is not configured to send to the destination whitelist.
 
 Example
-- Whitelist A is only allowed to send to iteself.
+- Whitelist A is only allowed to send to itself.
 - Whitelist B is allowed to send to itself and whitelist A.
 - Whitelist C is allowed to send to itself and whitelists A and B.
 - Whitelist D is not allowed to transfer to any whitelist, including itself.
