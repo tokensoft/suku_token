@@ -49,7 +49,7 @@ Example
 </p>
 
 
-A total of 255 whitelists can be created, each with the ability to restrict transfers to all other whitelists.
+A total of 255 whitelists can be utilized, each with the ability to restrict transfers to all other whitelists.
 
 By default, all whitelists will **NOT** be allowed to transfer between source and destination addresses within the same whitelist.  This must explicitly be enabled.  By default all whitelists block all transfers.
 
