@@ -63,6 +63,7 @@ contract Whitelistable is Administratable {
 
     /**
     Sets the flag to indicate whether source whitelist is allowed to send to destination whitelist.
+    Only administrators should be allowed to update this.
      */
     function updateOutboundWhitelistEnabled(uint8 sourceWhitelist, uint8 destinationWhitelist, bool newEnabledValue) public onlyAdministrator {
         // Get the old enabled flag
