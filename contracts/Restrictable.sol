@@ -10,8 +10,8 @@ contract Restrictable is Ownable {
     // State variable to track whether restrictions are enabled.  Defaults to true.
     bool private _restrictionsEnabled = true;
 
-    // Event emitted when enabled flag is updated
-    event RestrictionEnabledUpdated(bool indexed enabled, address indexed owner);
+    // Event emitted when flag is disabled
+    event RestrictionsDisabled(address indexed owner);
 
     /**
     View function to determine if restrictions are enabled
@@ -25,10 +25,12 @@ contract Restrictable is Ownable {
     This is a permanent change that cannot be undone
      */
     function disableRestrictions() public onlyOwner {
+        require(_restrictionsEnabled, "Restrictions are already disabled.");
+        
         // Set the flag
         _restrictionsEnabled = false;
 
         // Trigger the event
-        emit RestrictionEnabledUpdated(false, msg.sender);
+        emit RestrictionsDisabled(msg.sender);
     }
 }
