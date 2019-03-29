@@ -51,7 +51,7 @@ contract('Whitelistable', (accounts) => {
     // Now allow acct 4 be an administrator
     await tokenInstance.addAdmin(accounts[4], { from: accounts[0] })
 
-    // Adding and as admin should work
+    // Adding as admin should work
     await tokenInstance.addToWhitelist(accounts[2], 10, { from: accounts[4] })
 
     // Removing as non-admin should fail
