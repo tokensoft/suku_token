@@ -29,7 +29,7 @@ contract('Administratable', (accounts) => {
   it('should preventing adding and removing by non-owner', async () => {
     const tokenInstance = await SukuToken.deployed()
 
-    // Validate acct 2 is not ad admin by default
+    // Validate acct 2 is not an admin by default
     let isAdmin = await tokenInstance.isAdministrator(accounts[2])
     assert.equal(isAdmin, false, 'Account should not be admin by default')
 
