@@ -45,23 +45,26 @@ contract('Whitelistable', (accounts) => {
   it('should only allow admins adding or removing on whitelists', async () => {
     const tokenInstance = await SukuToken.new()
 
-    // Non admin should fail
+    // Non admin should fail adding to white list
     await shouldFail.reverting(tokenInstance.addToWhitelist(accounts[2], 10, { from: accounts[4] }))
-    await shouldFail.reverting(tokenInstance.removeFromWhitelist(accounts[2], { from: accounts[4] }))
 
     // Now allow acct 4 be an administrator
     await tokenInstance.addAdmin(accounts[4], { from: accounts[0] })
 
-    // Adding and removing should work
+    // Adding as admin should work
     await tokenInstance.addToWhitelist(accounts[2], 10, { from: accounts[4] })
+
+    // Removing as non-admin should fail
+    await shouldFail.reverting(tokenInstance.removeFromWhitelist(accounts[2], { from: accounts[8] }))
+
+    // Removing as admin should work
     await tokenInstance.removeFromWhitelist(accounts[2], { from: accounts[4] })
 
     // Now remove acct 4 from the admin list
     await tokenInstance.removeAdmin(accounts[4], { from: accounts[0] })
 
-    // They should fail again
+    // It should fail again now that acct 4 is non-admin
     await shouldFail.reverting(tokenInstance.addToWhitelist(accounts[2], 10, { from: accounts[4] }))
-    await shouldFail.reverting(tokenInstance.removeFromWhitelist(accounts[2], { from: accounts[4] }))
   })
 
   it('should validate if addresses are not on a whitelist', async () => {
