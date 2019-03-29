@@ -31,7 +31,7 @@ contract('Restrictable', (accounts) => {
   })
 
   it('should trigger events', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
 
     // Turn it off
     let ret = await tokenInstance.disableRestrictions({ from: accounts[0] })

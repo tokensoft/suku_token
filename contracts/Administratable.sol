@@ -35,6 +35,9 @@ contract Administratable is Ownable {
     Add an admin to the list.  This should only be callable by the owner of the contract.
      */
     function addAdmin(address adminToAdd) public onlyOwner {
+        // Verify the account is not already an admin
+        require(administrators[adminToAdd] == false, "Account to be added to admin list is already an admin");
+
         // Set the address mapping to true to indicate it is an administrator account.
         administrators[adminToAdd] = true;
 
@@ -46,12 +49,13 @@ contract Administratable is Ownable {
     Remove an admin from the list.  This should only be callable by the owner of the contract.
      */
     function removeAdmin(address adminToRemove) public onlyOwner {
+        // Verify the account is an admin
+        require(administrators[adminToRemove] == true, "Account to be removed from admin list is not already an admin");
+
         // Set the address mapping to false to indicate it is NOT an administrator account.  
         administrators[adminToRemove] = false;
 
         // Emit the event for any watchers.
         emit AdminRemoved(adminToRemove, msg.sender);
     }
-
-
 }
