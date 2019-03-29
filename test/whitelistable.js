@@ -124,7 +124,7 @@ contract('Whitelistable', (accounts) => {
   it('should trigger events', async () => {
     const tokenInstance = await SukuToken.new()
 
-    // First allow acct 1 and 3 to be an administrator
+    // First allow acct 1 to be an administrator
     await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
 
     // Check for initial add
