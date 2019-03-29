@@ -271,7 +271,7 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity >=0.4.25 <0.6.0;\n\nimport \"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\";\n\ncontract ERC1404 is ERC20 {\n    /// @notice Detects if a transfer will be reverted and if so returns an appropriate reference code\n    /// @param from Sending address\n    /// @param to Receiving address\n    /// @param value Amount of tokens being transferred\n    /// @return Code by which to reference message for rejection reasoning\n    /// @dev Overwrite with your custom transfer restriction logic\n    function detectTransferRestriction (address from, address to, uint256 value) public view returns (uint8);\n\n    /// @notice Returns a human-readable message for a given restriction code\n    /// @param restrictionCode Identifier for looking up a message\n    /// @return Text showing the restriction's reasoning\n    /// @dev Overwrite with your custom message and restrictionCode handling\n    function messageForTransferRestriction (uint8 restrictionCode) public view returns (string memory);\n}",
+  "source": "pragma solidity 0.5.0;\n\nimport \"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\";\n\ncontract ERC1404 is ERC20 {\n    /// @notice Detects if a transfer will be reverted and if so returns an appropriate reference code\n    /// @param from Sending address\n    /// @param to Receiving address\n    /// @param value Amount of tokens being transferred\n    /// @return Code by which to reference message for rejection reasoning\n    /// @dev Overwrite with your custom transfer restriction logic\n    function detectTransferRestriction (address from, address to, uint256 value) public view returns (uint8);\n\n    /// @notice Returns a human-readable message for a given restriction code\n    /// @param restrictionCode Identifier for looking up a message\n    /// @return Text showing the restriction's reasoning\n    /// @dev Overwrite with your custom message and restrictionCode handling\n    function messageForTransferRestriction (uint8 restrictionCode) public view returns (string memory);\n}",
   "sourcePath": "/Users/james/Source/tokensoft/suku_token/contracts/ERC1404.sol",
   "ast": {
     "absolutePath": "/Users/james/Source/tokensoft/suku_token/contracts/ERC1404.sol",
@@ -287,15 +287,11 @@
         "id": 87,
         "literals": [
           "solidity",
-          ">=",
-          "0.4",
-          ".25",
-          "<",
-          "0.6",
+          "0.5",
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:1"
+        "src": "0:22:1"
       },
       {
         "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
@@ -303,8 +299,8 @@
         "id": 88,
         "nodeType": "ImportDirective",
         "scope": 110,
-        "sourceUnit": 1461,
-        "src": "34:63:1",
+        "sourceUnit": 1463,
+        "src": "24:63:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -317,21 +313,21 @@
               "id": 89,
               "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1460,
-              "src": "119:5:1",
+              "referencedDeclaration": 1462,
+              "src": "109:5:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20_$1460",
+                "typeIdentifier": "t_contract$_ERC20_$1462",
                 "typeString": "contract ERC20"
               }
             },
             "id": 90,
             "nodeType": "InheritanceSpecifier",
-            "src": "119:5:1"
+            "src": "109:5:1"
           }
         ],
         "contractDependencies": [
-          1460,
-          1587
+          1462,
+          1589
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -339,8 +335,8 @@
         "id": 109,
         "linearizedBaseContracts": [
           109,
-          1460,
-          1587
+          1462,
+          1589
         ],
         "name": "ERC1404",
         "nodeType": "ContractDefinition",
@@ -364,7 +360,7 @@
                   "name": "from",
                   "nodeType": "VariableDeclaration",
                   "scope": 101,
-                  "src": "540:12:1",
+                  "src": "530:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -375,7 +371,7 @@
                     "id": 91,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "540:7:1",
+                    "src": "530:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -391,7 +387,7 @@
                   "name": "to",
                   "nodeType": "VariableDeclaration",
                   "scope": 101,
-                  "src": "554:10:1",
+                  "src": "544:10:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -402,7 +398,7 @@
                     "id": 93,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "554:7:1",
+                    "src": "544:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -418,7 +414,7 @@
                   "name": "value",
                   "nodeType": "VariableDeclaration",
                   "scope": 101,
-                  "src": "566:13:1",
+                  "src": "556:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -429,7 +425,7 @@
                     "id": 95,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "566:7:1",
+                    "src": "556:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -439,7 +435,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "539:41:1"
+              "src": "529:41:1"
             },
             "returnParameters": {
               "id": 100,
@@ -451,7 +447,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 101,
-                  "src": "602:5:1",
+                  "src": "592:5:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -462,7 +458,7 @@
                     "id": 98,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "602:5:1",
+                    "src": "592:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -472,10 +468,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "601:7:1"
+              "src": "591:7:1"
             },
             "scope": 109,
-            "src": "504:105:1",
+            "src": "494:105:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -499,7 +495,7 @@
                   "name": "restrictionCode",
                   "nodeType": "VariableDeclaration",
                   "scope": 108,
-                  "src": "934:21:1",
+                  "src": "924:21:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -510,7 +506,7 @@
                     "id": 102,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "934:5:1",
+                    "src": "924:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -520,7 +516,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "933:23:1"
+              "src": "923:23:1"
             },
             "returnParameters": {
               "id": 107,
@@ -532,7 +528,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 108,
-                  "src": "978:13:1",
+                  "src": "968:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -543,7 +539,7 @@
                     "id": 105,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "978:6:1",
+                    "src": "968:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -553,20 +549,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "977:15:1"
+              "src": "967:15:1"
             },
             "scope": 109,
-            "src": "894:99:1",
+            "src": "884:99:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 110,
-        "src": "99:896:1"
+        "src": "89:896:1"
       }
     ],
-    "src": "0:995:1"
+    "src": "0:985:1"
   },
   "legacyAST": {
     "absolutePath": "/Users/james/Source/tokensoft/suku_token/contracts/ERC1404.sol",
@@ -582,15 +578,11 @@
         "id": 87,
         "literals": [
           "solidity",
-          ">=",
-          "0.4",
-          ".25",
-          "<",
-          "0.6",
+          "0.5",
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:1"
+        "src": "0:22:1"
       },
       {
         "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
@@ -598,8 +590,8 @@
         "id": 88,
         "nodeType": "ImportDirective",
         "scope": 110,
-        "sourceUnit": 1461,
-        "src": "34:63:1",
+        "sourceUnit": 1463,
+        "src": "24:63:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -612,21 +604,21 @@
               "id": 89,
               "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1460,
-              "src": "119:5:1",
+              "referencedDeclaration": 1462,
+              "src": "109:5:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20_$1460",
+                "typeIdentifier": "t_contract$_ERC20_$1462",
                 "typeString": "contract ERC20"
               }
             },
             "id": 90,
             "nodeType": "InheritanceSpecifier",
-            "src": "119:5:1"
+            "src": "109:5:1"
           }
         ],
         "contractDependencies": [
-          1460,
-          1587
+          1462,
+          1589
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -634,8 +626,8 @@
         "id": 109,
         "linearizedBaseContracts": [
           109,
-          1460,
-          1587
+          1462,
+          1589
         ],
         "name": "ERC1404",
         "nodeType": "ContractDefinition",
@@ -659,7 +651,7 @@
                   "name": "from",
                   "nodeType": "VariableDeclaration",
                   "scope": 101,
-                  "src": "540:12:1",
+                  "src": "530:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -670,7 +662,7 @@
                     "id": 91,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "540:7:1",
+                    "src": "530:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -686,7 +678,7 @@
                   "name": "to",
                   "nodeType": "VariableDeclaration",
                   "scope": 101,
-                  "src": "554:10:1",
+                  "src": "544:10:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -697,7 +689,7 @@
                     "id": 93,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "554:7:1",
+                    "src": "544:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -713,7 +705,7 @@
                   "name": "value",
                   "nodeType": "VariableDeclaration",
                   "scope": 101,
-                  "src": "566:13:1",
+                  "src": "556:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -724,7 +716,7 @@
                     "id": 95,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "566:7:1",
+                    "src": "556:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -734,7 +726,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "539:41:1"
+              "src": "529:41:1"
             },
             "returnParameters": {
               "id": 100,
@@ -746,7 +738,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 101,
-                  "src": "602:5:1",
+                  "src": "592:5:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -757,7 +749,7 @@
                     "id": 98,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "602:5:1",
+                    "src": "592:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -767,10 +759,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "601:7:1"
+              "src": "591:7:1"
             },
             "scope": 109,
-            "src": "504:105:1",
+            "src": "494:105:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -794,7 +786,7 @@
                   "name": "restrictionCode",
                   "nodeType": "VariableDeclaration",
                   "scope": 108,
-                  "src": "934:21:1",
+                  "src": "924:21:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -805,7 +797,7 @@
                     "id": 102,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "934:5:1",
+                    "src": "924:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -815,7 +807,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "933:23:1"
+              "src": "923:23:1"
             },
             "returnParameters": {
               "id": 107,
@@ -827,7 +819,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 108,
-                  "src": "978:13:1",
+                  "src": "968:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -838,7 +830,7 @@
                     "id": 105,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "978:6:1",
+                    "src": "968:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -848,20 +840,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "977:15:1"
+              "src": "967:15:1"
             },
             "scope": 109,
-            "src": "894:99:1",
+            "src": "884:99:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 110,
-        "src": "99:896:1"
+        "src": "89:896:1"
       }
     ],
-    "src": "0:995:1"
+    "src": "0:985:1"
   },
   "compiler": {
     "name": "solc",
@@ -869,7 +861,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-20T23:54:56.785Z",
+  "updatedAt": "2019-03-28T23:56:55.502Z",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {
