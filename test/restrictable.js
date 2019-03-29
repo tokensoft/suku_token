@@ -4,12 +4,12 @@ const SukuToken = artifacts.require('SukuToken')
 
 contract('Restrictable', (accounts) => {
   it('should deploy', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
   })
 
   it('should default to restriction enabled and be changeable', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
 
     // Check initial value
     let isRestricted = await tokenInstance.isRestrictionEnabled.call()
@@ -24,17 +24,17 @@ contract('Restrictable', (accounts) => {
   })
 
   it('should only allow owner to update', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
 
     await shouldFail.reverting(tokenInstance.disableRestrictions({ from: accounts[5] }))
     await shouldFail.reverting(tokenInstance.disableRestrictions({ from: accounts[6] }))
   })
 
   it('should trigger events', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
 
     // Turn it off
     let ret = await tokenInstance.disableRestrictions({ from: accounts[0] })
-    expectEvent.inLogs(ret.logs, 'RestrictionEnabledUpdated', { enabled: false, owner: accounts[0] })
+    expectEvent.inLogs(ret.logs, 'RestrictionsDisabled', { owner: accounts[0] })
   })
 })

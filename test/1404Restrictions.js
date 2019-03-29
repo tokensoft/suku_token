@@ -9,15 +9,15 @@ const UNKNOWN_ERROR = 'Unknown Error Code'
 
 contract('1404 Restrictions', (accounts) => {
   it('should deploy', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
-
-    // Set account 1 as an admin to update white lists - other tests will assume this
-    await tokenInstance.addAdmin(accounts[1])
   })
 
   it('should fail with non whitelisted accounts', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
+
+    // Set account 1 as an admin
+    await tokenInstance.addAdmin(accounts[1])
 
     // Both not on white list - should fail
     let failureCode = await tokenInstance.detectTransferRestriction.call(accounts[5], accounts[6], 100)
@@ -95,7 +95,10 @@ contract('1404 Restrictions', (accounts) => {
   })
 
   it('should allow whitelists to be removed', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
+
+    // Set account 1 as an admin
+    await tokenInstance.addAdmin(accounts[1])
 
     // Both not on white list
     let failureCode = await tokenInstance.detectTransferRestriction.call(accounts[7], accounts[8], 100)
@@ -114,7 +117,7 @@ contract('1404 Restrictions', (accounts) => {
   })
 
   it('should handle unknown error codes', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
 
     let failureMessage = await tokenInstance.messageForTransferRestriction(1001)
     assert.equal(failureMessage, UNKNOWN_ERROR, 'Should be unknown error code for restriction')
