@@ -39,6 +39,10 @@ contract('Administratable', (accounts) => {
     // Adding the address to admin list should not impact this - only owner can add other admins
     await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
     await shouldFail.reverting(tokenInstance.addAdmin(accounts[2], { from: accounts[1] }))
+
+    // Verify a non-owner can't remove an admin (including itself)
+    await shouldFail.reverting(tokenInstance.removeAdmin(accounts[1], { from: accounts[1] }))
+    await shouldFail.reverting(tokenInstance.removeAdmin(accounts[1], { from: accounts[2] }))
   })
 
   it('should emit events for adding admins', async () => {
