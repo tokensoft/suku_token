@@ -5,12 +5,12 @@ const SukuToken = artifacts.require('SukuToken')
 
 contract('SukuToken', (accounts) => {
   it('should deploy', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
   })
 
   it('should have correct details set', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
 
     assert.equal(await tokenInstance.name.call(), 'SUKU', 'Name should be set correctly')
     assert.equal(await tokenInstance.symbol.call(), 'SUKU', 'Symbol should be set correctly')
@@ -18,7 +18,7 @@ contract('SukuToken', (accounts) => {
   })
 
   it('should mint tokens to creator', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
 
     // Expected amount is decimals of (10^18) time supply of 50 billion
     const expectedSupply = new BigNumber(10).pow(18).multipliedBy(50).multipliedBy(1000000000)

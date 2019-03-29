@@ -6,7 +6,7 @@ const SukuToken = artifacts.require('SukuToken')
  */
 contract('Restrictable', (accounts) => {
   it('should deploy', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
 
     // Current owner

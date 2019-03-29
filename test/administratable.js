@@ -4,12 +4,12 @@ const SukuToken = artifacts.require('SukuToken')
 
 contract('Administratable', (accounts) => {
   it('should deploy', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
   })
 
-  it('should allow adding and removing by owner', async () => {
-    const tokenInstance = await SukuToken.deployed()
+  it('should allow adding and removing for owner', async () => {
+    const tokenInstance = await SukuToken.new()
 
     // Validate acct 1 is not an admin by default
     let isAdmin = await tokenInstance.isAdministrator(accounts[1])
@@ -26,8 +26,8 @@ contract('Administratable', (accounts) => {
     assert.equal(isAdmin, false, 'Owner should be able to remove admin')
   })
 
-  it('should preventing adding and removing by non-owner', async () => {
-    const tokenInstance = await SukuToken.deployed()
+  it('should preventing adding and removing for non-owner', async () => {
+    const tokenInstance = await SukuToken.new()
 
     // Validate acct 2 is not an admin by default
     let isAdmin = await tokenInstance.isAdministrator(accounts[2])
@@ -46,14 +46,14 @@ contract('Administratable', (accounts) => {
   })
 
   it('should emit events for adding admins', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
 
     let { logs } = await tokenInstance.addAdmin(accounts[3], { from: accounts[0] })
     expectEvent.inLogs(logs, 'AdminAdded', { addedAdmin: accounts[3], addedBy: accounts[0] })
   })
 
   it('should emit events for removing admins', async () => {
-    const tokenInstance = await SukuToken.deployed()
+    const tokenInstance = await SukuToken.new()
 
     await tokenInstance.addAdmin(accounts[3], { from: accounts[0] })
     const { logs } = await tokenInstance.removeAdmin(accounts[3], { from: accounts[0] })
