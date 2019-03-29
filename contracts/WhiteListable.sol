@@ -31,6 +31,9 @@ contract Whitelistable is Administratable {
     If an address is on an existing whitelist, it will just get updated to the new value (removed from previous).
      */
     function addToWhitelist(address addressToAdd, uint8 whitelist) public onlyAdministrator {
+        // Verify the whitelist is valid
+        require(whitelist != NO_WHITELIST, "Invalid whitelist ID supplied");
+
         // Save off the previous white list
         uint8 previousWhitelist = addressWhitelists[addressToAdd];
 
