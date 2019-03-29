@@ -24,7 +24,7 @@ contract Whitelistable is Administratable {
     // Events to allow tracking add/remove.
     event AddressAddedToWhitelist(address indexed addedAddress, uint8 indexed whitelist, address indexed addedBy);
     event AddressRemovedFromWhitelist(address indexed removedAddress, uint8 indexed whitelist, address indexed removedBy);
-    event OutboundWhitelistUpdated(uint8 indexed sourceWhitelist, uint8 indexed destinationWhitelist, bool from, bool to);
+    event OutboundWhitelistUpdated(address indexed updatedBy, uint8 indexed sourceWhitelist, uint8 indexed destinationWhitelist, bool from, bool to);
 
     /**
     Sets an address's white list ID.  Only administrators should be allowed to update this.
@@ -73,7 +73,7 @@ contract Whitelistable is Administratable {
         outboundWhitelistsEnabled[sourceWhitelist][destinationWhitelist] = newEnabledValue;
 
         // Emit event for tracking
-        emit OutboundWhitelistUpdated(sourceWhitelist, destinationWhitelist, oldEnabledValue, newEnabledValue);
+        emit OutboundWhitelistUpdated(msg.sender, sourceWhitelist, destinationWhitelist, oldEnabledValue, newEnabledValue);
     }
 
     /**
