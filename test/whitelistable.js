@@ -3,6 +3,7 @@ const { shouldFail, expectEvent } = require('openzeppelin-test-helpers')
 const SukuToken = artifacts.require('SukuToken')
 
 const NO_WHITELIST = 0
+const FAILURE_INVALID_WHITELIST_MSG = 'Invalid whitelist ID supplied'
 
 contract('Whitelistable', (accounts) => {
   it('should deploy', async () => {
@@ -200,5 +201,15 @@ contract('Whitelistable', (accounts) => {
     // Verify doing same thihng
     ret = await tokenInstance.updateOutboundWhitelistEnabled(90, 100, false, { from: accounts[1] })
     expectEvent.inLogs(ret.logs, 'OutboundWhitelistUpdated', { sourceWhitelist: '90', destinationWhitelist: '100', from: false, to: false })
+  })
+
+  it('should not allow adding an address to invalid whitelist ID (0)', async () => {
+    const tokenInstance = await SukuToken.new()
+
+    // First allow acct 1 be an administrator
+    await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
+
+    // Adding acct 2 to whitelist 0 should get rejected
+    await shouldFail.reverting.withMessage(tokenInstance.addToWhitelist(accounts[2], NO_WHITELIST, { from: accounts[1] }), FAILURE_INVALID_WHITELIST_MSG)
   })
 })
