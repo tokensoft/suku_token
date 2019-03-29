@@ -3,8 +3,9 @@ pragma solidity 0.5.0;
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
 /**
-This contract allows a restrictions to be enabled or disabled.  Only the owner of the contract
-can turn off or on the restrictions.  All restrictions start off in an enabled state.
+Restrictions start off as enabled.
+Once they are disabled, they cannot be re-enabled.
+Only the owner may disable restrictions.
  */
 contract Restrictable is Ownable {
     // State variable to track whether restrictions are enabled.  Defaults to true.
