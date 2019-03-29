@@ -37,4 +37,14 @@ contract('Restrictable', (accounts) => {
     let ret = await tokenInstance.disableRestrictions({ from: accounts[0] })
     expectEvent.inLogs(ret.logs, 'RestrictionEnabledUpdated', { enabled: false, owner: accounts[0] })
   })
+
+  it('should fail to be disabled on the second try', async () => {
+    const tokenInstance = await SukuToken.new()
+
+    // First time should succeed
+    await tokenInstance.disableRestrictions({ from: accounts[0] })
+
+    // Second time should fail
+    await shouldFail.reverting(tokenInstance.disableRestrictions({ from: accounts[0] }))
+  })
 })
