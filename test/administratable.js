@@ -8,13 +8,8 @@ contract('Administratable', (accounts) => {
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
   })
 
-<<<<<<< HEAD
   it('should allow adding and removing for owner', async () => {
     const tokenInstance = await SukuToken.new()
-=======
-  it('should allow adding and removing by owner', async () => {
-    const tokenInstance = await SukuToken.deployed()
->>>>>>> 496eef1a982ac21e7eb5b7d3629dda8834684909
 
     // Validate acct 1 is not an admin by default
     let isAdmin = await tokenInstance.isAdministrator(accounts[1])
