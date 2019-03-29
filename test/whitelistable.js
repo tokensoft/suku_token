@@ -199,15 +199,15 @@ contract('Whitelistable', (accounts) => {
 
     // Verify logs for enabling outbound
     let ret = await tokenInstance.updateOutboundWhitelistEnabled(90, 100, true, { from: accounts[1] })
-    expectEvent.inLogs(ret.logs, 'OutboundWhitelistUpdated', { sourceWhitelist: '90', destinationWhitelist: '100', from: false, to: true })
+    expectEvent.inLogs(ret.logs, 'OutboundWhitelistUpdated', { updatedBy: accounts[1], sourceWhitelist: '90', destinationWhitelist: '100', from: false, to: true })
 
     // Verify logs for disabling outbound
     ret = await tokenInstance.updateOutboundWhitelistEnabled(90, 100, false, { from: accounts[1] })
-    expectEvent.inLogs(ret.logs, 'OutboundWhitelistUpdated', { sourceWhitelist: '90', destinationWhitelist: '100', from: true, to: false })
+    expectEvent.inLogs(ret.logs, 'OutboundWhitelistUpdated', { updatedBy: accounts[1], sourceWhitelist: '90', destinationWhitelist: '100', from: true, to: false })
 
     // Verify doing same thihng
     ret = await tokenInstance.updateOutboundWhitelistEnabled(90, 100, false, { from: accounts[1] })
-    expectEvent.inLogs(ret.logs, 'OutboundWhitelistUpdated', { sourceWhitelist: '90', destinationWhitelist: '100', from: false, to: false })
+    expectEvent.inLogs(ret.logs, 'OutboundWhitelistUpdated', { updatedBy: accounts[1], sourceWhitelist: '90', destinationWhitelist: '100', from: false, to: false })
   })
 
   it('should not allow adding an address to invalid whitelist ID (0)', async () => {
