@@ -8,14 +8,14 @@ contract('Administratable', (accounts) => {
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
   })
 
-  it('should allow adding and removing for owner', async () => {
+  it('should allow adding and removing by owner', async () => {
     const tokenInstance = await SukuToken.deployed()
 
-    // Validate no owners
+    // Validate acct 1 is not an admin by default
     let isAdmin = await tokenInstance.isAdministrator(accounts[1])
     assert.equal(isAdmin, false, 'Account should not be admin by default')
 
-    // Adding an owner to the list should be successful for the owner (address[0])
+    // Adding an admin to the list should be successful for the owner (address[0])
     await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
     isAdmin = await tokenInstance.isAdministrator.call(accounts[1])
     assert.equal(isAdmin, true, 'Owner should be able to add admin')
@@ -26,14 +26,14 @@ contract('Administratable', (accounts) => {
     assert.equal(isAdmin, false, 'Owner should be able to remove admin')
   })
 
-  it('should preventing adding and removing for non-owner', async () => {
+  it('should preventing adding and removing by non-owner', async () => {
     const tokenInstance = await SukuToken.deployed()
 
-    // Validate no owners
+    // Validate acct 2 is not an admin by default
     let isAdmin = await tokenInstance.isAdministrator(accounts[2])
     assert.equal(isAdmin, false, 'Account should not be admin by default')
 
-    // Adding an address to the list should faile for non-owner (address[1])
+    // Adding an address to the list should fail for non-owner (address[1])
     await shouldFail.reverting(tokenInstance.addAdmin(accounts[2], { from: accounts[1] }))
 
     // Adding the address to admin list should not impact this - only owner can add other admins
