@@ -60,4 +60,27 @@ contract('Administratable', (accounts) => {
 
     expectEvent.inLogs(logs, 'AdminRemoved', { removedAdmin: accounts[3], removedBy: accounts[0] })
   })
+
+  it('should preventing adding an admin when already an admin', async () => {
+    const tokenInstance = await SukuToken.new()
+
+    // The first add should succeed
+    await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
+
+    // The second add should fail
+    await shouldFail.reverting(tokenInstance.addAdmin(accounts[1], { from: accounts[0] }))
+  })
+
+  it('should preventing removing an admin when it is not an admin', async () => {
+    const tokenInstance = await SukuToken.new()
+
+    // Add an accct to the admin list
+    await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
+
+    // The first removal should succeed.
+    await tokenInstance.removeAdmin(accounts[1], { from: accounts[0] })
+
+    // The second removal should fail
+    await shouldFail.reverting(tokenInstance.removeAdmin(accounts[1], { from: accounts[0] }))
+  })
 })
