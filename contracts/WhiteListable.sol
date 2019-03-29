@@ -34,16 +34,16 @@ contract Whitelistable is Administratable {
         // Save off the previous white list
         uint8 previousWhitelist = addressWhitelists[addressToAdd];
 
+        // Set the address's white list ID
+        addressWhitelists[addressToAdd] = whitelist;        
+
         // If the previous whitelist existed then we want to indicate it has been removed
         if(previousWhitelist != NO_WHITELIST) {
             // Emit the event for tracking
             emit AddressRemovedFromWhitelist(addressToAdd, previousWhitelist, msg.sender);
         }
 
-        // Set the address's white list ID
-        addressWhitelists[addressToAdd] = whitelist;
-
-        // Emit the event for tracking
+        // Emit the event for new whitelist
         emit AddressAddedToWhitelist(addressToAdd, whitelist, msg.sender);
     }
 
