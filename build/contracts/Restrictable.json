@@ -105,24 +105,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x60806040526001600060146101000a81548160ff021916908315150217905550336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a361057a806100ea6000396000f3fe608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a6424071461007d578063715018a6146100ac5780638da5cb5b146100c35780638f32d59b1461011a578063dce306ad14610149578063f2fde38b14610160575b600080fd5b34801561008957600080fd5b506100926101b1565b604051808215151515815260200191505060405180910390f35b3480156100b857600080fd5b506100c16101c7565b005b3480156100cf57600080fd5b506100d8610299565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012657600080fd5b5061012f6102c2565b604051808215151515815260200191505060405180910390f35b34801561015557600080fd5b5061015e610319565b005b34801561016c57600080fd5b506101af6004803603602081101561018357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610435565b005b60008060149054906101000a900460ff16905090565b6101cf6102c2565b15156101da57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6103216102c2565b151561032c57600080fd5b600060149054906101000a900460ff1615156103d6576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001807f5265737472696374696f6e732061726520616c72656164792064697361626c6581526020017f642e00000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b60008060146101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff167f3c13a557aa89734e312c348465096b4ddc97709822675c45090f4e2a8d6c4f2b60405160405180910390a2565b61043d6102c2565b151561044857600080fd5b61045181610454565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561049057600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a723058206e4f843a2e50fd44edd03540d38d37830c6b4301b8fb457f2e7603fbcdac969f0029",
-  "deployedBytecode": "0x608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a6424071461007d578063715018a6146100ac5780638da5cb5b146100c35780638f32d59b1461011a578063dce306ad14610149578063f2fde38b14610160575b600080fd5b34801561008957600080fd5b506100926101b1565b604051808215151515815260200191505060405180910390f35b3480156100b857600080fd5b506100c16101c7565b005b3480156100cf57600080fd5b506100d8610299565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012657600080fd5b5061012f6102c2565b604051808215151515815260200191505060405180910390f35b34801561015557600080fd5b5061015e610319565b005b34801561016c57600080fd5b506101af6004803603602081101561018357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610435565b005b60008060149054906101000a900460ff16905090565b6101cf6102c2565b15156101da57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6103216102c2565b151561032c57600080fd5b600060149054906101000a900460ff1615156103d6576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001807f5265737472696374696f6e732061726520616c72656164792064697361626c6581526020017f642e00000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b60008060146101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff167f3c13a557aa89734e312c348465096b4ddc97709822675c45090f4e2a8d6c4f2b60405160405180910390a2565b61043d6102c2565b151561044857600080fd5b61045181610454565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561049057600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a723058206e4f843a2e50fd44edd03540d38d37830c6b4301b8fb457f2e7603fbcdac969f0029",
-  "sourceMap": "278:913:3:-;;;437:4;401:40;;;;;;;;;;;;;;;;;;;;524:10:8;515:6;;:19;;;;;;;;;;;;;;;;;;582:6;;;;;;;;;;;549:40;;578:1;549:40;;;;;;;;;;;;278:913:3;;;;;;",
-  "deployedSourceMap": "278:913:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;622:103;;8:9:-1;5:2;;;30:1;27;20:12;5:2;622:103:3;;;;;;;;;;;;;;;;;;;;;;;;;;;1347:137:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1347:137:8;;;;;;659:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;659:77:8;;;;;;;;;;;;;;;;;;;;;;;;;;;979:90;;8:9:-1;5:2;;;30:1;27;20:12;5:2;979:90:8;;;;;;;;;;;;;;;;;;;;;;;;;;;909:280:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;909:280:3;;;;;;1655:107:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1655:107:8;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1655:107:8;;;;;;;;;;;;;;;;;;;;;;622:103:3;675:4;698:20;;;;;;;;;;;691:27;;622:103;:::o;1347:137:8:-;863:9;:7;:9::i;:::-;855:18;;;;;;;;1445:1;1408:40;;1429:6;;;;;;;;;;;1408:40;;;;;;;;;;;;1475:1;1458:6;;:19;;;;;;;;;;;;;;;;;;1347:137::o;659:77::-;697:7;723:6;;;;;;;;;;;716:13;;659:77;:::o;979:90::-;1019:4;1056:6;;;;;;;;;;;1042:20;;:10;:20;;;1035:27;;979:90;:::o;909:280:3:-;863:9:8;:7;:9::i;:::-;855:18;;;;;;;;975:20:3;;;;;;;;;;;967:67;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1100:5;1077:20;;:28;;;;;;;;;;;;;;;;;;1171:10;1150:32;;;;;;;;;;;;909:280::o;1655:107:8:-;863:9;:7;:9::i;:::-;855:18;;;;;;;;1727:28;1746:8;1727:18;:28::i;:::-;1655:107;:::o;1906:183::-;1999:1;1979:22;;:8;:22;;;;1971:31;;;;;;;;2046:8;2017:38;;2038:6;;;;;;;;;;;2017:38;;;;;;;;;;;;2074:8;2065:6;;:17;;;;;;;;;;;;;;;;;;1906:183;:::o",
-  "source": "pragma solidity 0.5.0;\n\nimport \"openzeppelin-solidity/contracts/ownership/Ownable.sol\";\n\n/**\nThis contract allows a restrictions to be enabled or disabled.  Only the owner of the contract\ncan turn off or on the restrictions.  All restrictions start off in an enabled state.\n */\ncontract Restrictable is Ownable {\n    // State variable to track whether restrictions are enabled.  Defaults to true.\n    bool private _restrictionsEnabled = true;\n\n    // Event emitted when flag is disabled\n    event RestrictionsDisabled(address indexed owner);\n\n    /**\n    View function to determine if restrictions are enabled\n     */\n    function isRestrictionEnabled() public view returns (bool) {\n        return _restrictionsEnabled;\n    }\n\n    /**\n    Function to update the enabled flag on restrictions to disabled.  Only the owner should be able to call.\n    This is a permanent change that cannot be undone\n     */\n    function disableRestrictions() public onlyOwner {\n        require(_restrictionsEnabled, \"Restrictions are already disabled.\");\n        \n        // Set the flag\n        _restrictionsEnabled = false;\n\n        // Trigger the event\n        emit RestrictionsDisabled(msg.sender);\n    }\n}",
+  "bytecode": "0x60806040526001600060146101000a81548160ff021916908315150217905550336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a361057a806100ea6000396000f3fe608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a6424071461007d578063715018a6146100ac5780638da5cb5b146100c35780638f32d59b1461011a578063dce306ad14610149578063f2fde38b14610160575b600080fd5b34801561008957600080fd5b506100926101b1565b604051808215151515815260200191505060405180910390f35b3480156100b857600080fd5b506100c16101c7565b005b3480156100cf57600080fd5b506100d8610299565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012657600080fd5b5061012f6102c2565b604051808215151515815260200191505060405180910390f35b34801561015557600080fd5b5061015e610319565b005b34801561016c57600080fd5b506101af6004803603602081101561018357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610435565b005b60008060149054906101000a900460ff16905090565b6101cf6102c2565b15156101da57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6103216102c2565b151561032c57600080fd5b600060149054906101000a900460ff1615156103d6576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001807f5265737472696374696f6e732061726520616c72656164792064697361626c6581526020017f642e00000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b60008060146101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff167f3c13a557aa89734e312c348465096b4ddc97709822675c45090f4e2a8d6c4f2b60405160405180910390a2565b61043d6102c2565b151561044857600080fd5b61045181610454565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561049057600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a7230582034ccdfc52382df4872c45152529eae133d192e7c4049c4d8ee8c36b9ced9e5a50029",
+  "deployedBytecode": "0x608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a6424071461007d578063715018a6146100ac5780638da5cb5b146100c35780638f32d59b1461011a578063dce306ad14610149578063f2fde38b14610160575b600080fd5b34801561008957600080fd5b506100926101b1565b604051808215151515815260200191505060405180910390f35b3480156100b857600080fd5b506100c16101c7565b005b3480156100cf57600080fd5b506100d8610299565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012657600080fd5b5061012f6102c2565b604051808215151515815260200191505060405180910390f35b34801561015557600080fd5b5061015e610319565b005b34801561016c57600080fd5b506101af6004803603602081101561018357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610435565b005b60008060149054906101000a900460ff16905090565b6101cf6102c2565b15156101da57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6103216102c2565b151561032c57600080fd5b600060149054906101000a900460ff1615156103d6576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001807f5265737472696374696f6e732061726520616c72656164792064697361626c6581526020017f642e00000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b60008060146101000a81548160ff0219169083151502179055503373ffffffffffffffffffffffffffffffffffffffff167f3c13a557aa89734e312c348465096b4ddc97709822675c45090f4e2a8d6c4f2b60405160405180910390a2565b61043d6102c2565b151561044857600080fd5b61045181610454565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561049057600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a7230582034ccdfc52382df4872c45152529eae133d192e7c4049c4d8ee8c36b9ced9e5a50029",
+  "sourceMap": "224:913:3:-;;;383:4;347:40;;;;;;;;;;;;;;;;;;;;524:10:8;515:6;;:19;;;;;;;;;;;;;;;;;;582:6;;;;;;;;;;;549:40;;578:1;549:40;;;;;;;;;;;;224:913:3;;;;;;",
+  "deployedSourceMap": "224:913:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;568:103;;8:9:-1;5:2;;;30:1;27;20:12;5:2;568:103:3;;;;;;;;;;;;;;;;;;;;;;;;;;;1347:137:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1347:137:8;;;;;;659:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;659:77:8;;;;;;;;;;;;;;;;;;;;;;;;;;;979:90;;8:9:-1;5:2;;;30:1;27;20:12;5:2;979:90:8;;;;;;;;;;;;;;;;;;;;;;;;;;;855:280:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;855:280:3;;;;;;1655:107:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1655:107:8;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1655:107:8;;;;;;;;;;;;;;;;;;;;;;568:103:3;621:4;644:20;;;;;;;;;;;637:27;;568:103;:::o;1347:137:8:-;863:9;:7;:9::i;:::-;855:18;;;;;;;;1445:1;1408:40;;1429:6;;;;;;;;;;;1408:40;;;;;;;;;;;;1475:1;1458:6;;:19;;;;;;;;;;;;;;;;;;1347:137::o;659:77::-;697:7;723:6;;;;;;;;;;;716:13;;659:77;:::o;979:90::-;1019:4;1056:6;;;;;;;;;;;1042:20;;:10;:20;;;1035:27;;979:90;:::o;855:280:3:-;863:9:8;:7;:9::i;:::-;855:18;;;;;;;;921:20:3;;;;;;;;;;;913:67;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1046:5;1023:20;;:28;;;;;;;;;;;;;;;;;;1117:10;1096:32;;;;;;;;;;;;855:280::o;1655:107:8:-;863:9;:7;:9::i;:::-;855:18;;;;;;;;1727:28;1746:8;1727:18;:28::i;:::-;1655:107;:::o;1906:183::-;1999:1;1979:22;;:8;:22;;;;1971:31;;;;;;;;2046:8;2017:38;;2038:6;;;;;;;;;;;2017:38;;;;;;;;;;;;2074:8;2065:6;;:17;;;;;;;;;;;;;;;;;;1906:183;:::o",
+  "source": "pragma solidity 0.5.0;\n\nimport \"openzeppelin-solidity/contracts/ownership/Ownable.sol\";\n\n/**\nRestrictions start off as enabled.\nOnce they are disabled, they cannot be re-enabled.\nOnly the owner may disable restrictions.\n */\ncontract Restrictable is Ownable {\n    // State variable to track whether restrictions are enabled.  Defaults to true.\n    bool private _restrictionsEnabled = true;\n\n    // Event emitted when flag is disabled\n    event RestrictionsDisabled(address indexed owner);\n\n    /**\n    View function to determine if restrictions are enabled\n     */\n    function isRestrictionEnabled() public view returns (bool) {\n        return _restrictionsEnabled;\n    }\n\n    /**\n    Function to update the enabled flag on restrictions to disabled.  Only the owner should be able to call.\n    This is a permanent change that cannot be undone\n     */\n    function disableRestrictions() public onlyOwner {\n        require(_restrictionsEnabled, \"Restrictions are already disabled.\");\n        \n        // Set the flag\n        _restrictionsEnabled = false;\n\n        // Trigger the event\n        emit RestrictionsDisabled(msg.sender);\n    }\n}\n",
   "sourcePath": "/Users/james/Source/tokensoft/suku_token/contracts/Restrictable.sol",
   "ast": {
     "absolutePath": "/Users/james/Source/tokensoft/suku_token/contracts/Restrictable.sol",
     "exportedSymbols": {
       "Restrictable": [
-        207
+        225
       ]
     },
-    "id": 208,
+    "id": 226,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 168,
+        "id": 186,
         "literals": [
           "solidity",
           "0.5",
@@ -134,10 +134,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 169,
+        "id": 187,
         "nodeType": "ImportDirective",
-        "scope": 208,
-        "sourceUnit": 1031,
+        "scope": 226,
+        "sourceUnit": 1071,
         "src": "24:63:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -148,42 +148,42 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 170,
+              "id": 188,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1030,
-              "src": "303:7:3",
+              "referencedDeclaration": 1070,
+              "src": "249:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1030",
+                "typeIdentifier": "t_contract$_Ownable_$1070",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 171,
+            "id": 189,
             "nodeType": "InheritanceSpecifier",
-            "src": "303:7:3"
+            "src": "249:7:3"
           }
         ],
         "contractDependencies": [
-          1030
+          1070
         ],
         "contractKind": "contract",
-        "documentation": "This contract allows a restrictions to be enabled or disabled.  Only the owner of the contract\ncan turn off or on the restrictions.  All restrictions start off in an enabled state.",
+        "documentation": "Restrictions start off as enabled.\nOnce they are disabled, they cannot be re-enabled.\nOnly the owner may disable restrictions.",
         "fullyImplemented": true,
-        "id": 207,
+        "id": 225,
         "linearizedBaseContracts": [
-          207,
-          1030
+          225,
+          1070
         ],
         "name": "Restrictable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 174,
+            "id": 192,
             "name": "_restrictionsEnabled",
             "nodeType": "VariableDeclaration",
-            "scope": 207,
-            "src": "401:40:3",
+            "scope": 225,
+            "src": "347:40:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -191,10 +191,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 172,
+              "id": 190,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "401:4:3",
+              "src": "347:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -203,14 +203,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "74727565",
-              "id": 173,
+              "id": 191,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "bool",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "437:4:3",
+              "src": "383:4:3",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
@@ -223,21 +223,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 178,
+            "id": 196,
             "name": "RestrictionsDisabled",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 177,
+              "id": 195,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 176,
+                  "id": 194,
                   "indexed": true,
                   "name": "owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 178,
-                  "src": "518:21:3",
+                  "scope": 196,
+                  "src": "464:21:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -245,10 +245,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 175,
+                    "id": 193,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "518:7:3",
+                    "src": "464:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -259,61 +259,61 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "517:23:3"
+              "src": "463:23:3"
             },
-            "src": "491:50:3"
+            "src": "437:50:3"
           },
           {
             "body": {
-              "id": 185,
+              "id": 203,
               "nodeType": "Block",
-              "src": "681:44:3",
+              "src": "627:44:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 183,
+                    "id": 201,
                     "name": "_restrictionsEnabled",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 174,
-                    "src": "698:20:3",
+                    "referencedDeclaration": 192,
+                    "src": "644:20:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 182,
-                  "id": 184,
+                  "functionReturnParameters": 200,
+                  "id": 202,
                   "nodeType": "Return",
-                  "src": "691:27:3"
+                  "src": "637:27:3"
                 }
               ]
             },
             "documentation": "View function to determine if restrictions are enabled",
-            "id": 186,
+            "id": 204,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isRestrictionEnabled",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 179,
+              "id": 197,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "651:2:3"
+              "src": "597:2:3"
             },
             "returnParameters": {
-              "id": 182,
+              "id": 200,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 181,
+                  "id": 199,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 186,
-                  "src": "675:4:3",
+                  "scope": 204,
+                  "src": "621:4:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -321,10 +321,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 180,
+                    "id": 198,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "675:4:3",
+                    "src": "621:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -334,19 +334,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "674:6:3"
+              "src": "620:6:3"
             },
-            "scope": 207,
-            "src": "622:103:3",
+            "scope": 225,
+            "src": "568:103:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 205,
+              "id": 223,
               "nodeType": "Block",
-              "src": "957:232:3",
+              "src": "903:232:3",
               "statements": [
                 {
                   "expression": {
@@ -354,12 +354,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 192,
+                        "id": 210,
                         "name": "_restrictionsEnabled",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 174,
-                        "src": "975:20:3",
+                        "referencedDeclaration": 192,
+                        "src": "921:20:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -368,14 +368,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "5265737472696374696f6e732061726520616c72656164792064697361626c65642e",
-                        "id": 193,
+                        "id": 211,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "997:36:3",
+                        "src": "943:36:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_aba37404dd0e45f4383877713ea0e585b7e8a33afff6c67906c8ef699631c47f",
@@ -395,21 +395,21 @@
                           "typeString": "literal_string \"Restrictions are already disabled.\""
                         }
                       ],
-                      "id": 191,
+                      "id": 209,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1607,
-                        1608
+                        1647,
+                        1648
                       ],
-                      "referencedDeclaration": 1608,
-                      "src": "967:7:3",
+                      "referencedDeclaration": 1648,
+                      "src": "913:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 194,
+                    "id": 212,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -417,32 +417,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "967:67:3",
+                    "src": "913:67:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 195,
+                  "id": 213,
                   "nodeType": "ExpressionStatement",
-                  "src": "967:67:3"
+                  "src": "913:67:3"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 198,
+                    "id": 216,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 196,
+                      "id": 214,
                       "name": "_restrictionsEnabled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 174,
-                      "src": "1077:20:3",
+                      "referencedDeclaration": 192,
+                      "src": "1023:20:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -453,14 +453,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 197,
+                      "id": 215,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1100:5:3",
+                      "src": "1046:5:3",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -468,15 +468,15 @@
                       },
                       "value": "false"
                     },
-                    "src": "1077:28:3",
+                    "src": "1023:28:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 199,
+                  "id": 217,
                   "nodeType": "ExpressionStatement",
-                  "src": "1077:28:3"
+                  "src": "1023:28:3"
                 },
                 {
                   "eventCall": {
@@ -486,18 +486,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 201,
+                          "id": 219,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1604,
-                          "src": "1171:3:3",
+                          "referencedDeclaration": 1644,
+                          "src": "1117:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 202,
+                        "id": 220,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -505,7 +505,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1171:10:3",
+                        "src": "1117:10:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -519,18 +519,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 200,
+                      "id": 218,
                       "name": "RestrictionsDisabled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 178,
-                      "src": "1150:20:3",
+                      "referencedDeclaration": 196,
+                      "src": "1096:20:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 203,
+                    "id": 221,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -538,82 +538,82 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1150:32:3",
+                    "src": "1096:32:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 204,
+                  "id": 222,
                   "nodeType": "EmitStatement",
-                  "src": "1145:37:3"
+                  "src": "1091:37:3"
                 }
               ]
             },
             "documentation": "Function to update the enabled flag on restrictions to disabled.  Only the owner should be able to call.\nThis is a permanent change that cannot be undone",
-            "id": 206,
+            "id": 224,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 189,
+                "id": 207,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 188,
+                  "id": 206,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 964,
-                  "src": "947:9:3",
+                  "referencedDeclaration": 1004,
+                  "src": "893:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "947:9:3"
+                "src": "893:9:3"
               }
             ],
             "name": "disableRestrictions",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 187,
+              "id": 205,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "937:2:3"
+              "src": "883:2:3"
             },
             "returnParameters": {
-              "id": 190,
+              "id": 208,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "957:0:3"
+              "src": "903:0:3"
             },
-            "scope": 207,
-            "src": "909:280:3",
+            "scope": 225,
+            "src": "855:280:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 208,
-        "src": "278:913:3"
+        "scope": 226,
+        "src": "224:913:3"
       }
     ],
-    "src": "0:1191:3"
+    "src": "0:1138:3"
   },
   "legacyAST": {
     "absolutePath": "/Users/james/Source/tokensoft/suku_token/contracts/Restrictable.sol",
     "exportedSymbols": {
       "Restrictable": [
-        207
+        225
       ]
     },
-    "id": 208,
+    "id": 226,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 168,
+        "id": 186,
         "literals": [
           "solidity",
           "0.5",
@@ -625,10 +625,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 169,
+        "id": 187,
         "nodeType": "ImportDirective",
-        "scope": 208,
-        "sourceUnit": 1031,
+        "scope": 226,
+        "sourceUnit": 1071,
         "src": "24:63:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -639,42 +639,42 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 170,
+              "id": 188,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1030,
-              "src": "303:7:3",
+              "referencedDeclaration": 1070,
+              "src": "249:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1030",
+                "typeIdentifier": "t_contract$_Ownable_$1070",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 171,
+            "id": 189,
             "nodeType": "InheritanceSpecifier",
-            "src": "303:7:3"
+            "src": "249:7:3"
           }
         ],
         "contractDependencies": [
-          1030
+          1070
         ],
         "contractKind": "contract",
-        "documentation": "This contract allows a restrictions to be enabled or disabled.  Only the owner of the contract\ncan turn off or on the restrictions.  All restrictions start off in an enabled state.",
+        "documentation": "Restrictions start off as enabled.\nOnce they are disabled, they cannot be re-enabled.\nOnly the owner may disable restrictions.",
         "fullyImplemented": true,
-        "id": 207,
+        "id": 225,
         "linearizedBaseContracts": [
-          207,
-          1030
+          225,
+          1070
         ],
         "name": "Restrictable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 174,
+            "id": 192,
             "name": "_restrictionsEnabled",
             "nodeType": "VariableDeclaration",
-            "scope": 207,
-            "src": "401:40:3",
+            "scope": 225,
+            "src": "347:40:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -682,10 +682,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 172,
+              "id": 190,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "401:4:3",
+              "src": "347:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -694,14 +694,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "74727565",
-              "id": 173,
+              "id": 191,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "bool",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "437:4:3",
+              "src": "383:4:3",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
@@ -714,21 +714,21 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 178,
+            "id": 196,
             "name": "RestrictionsDisabled",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 177,
+              "id": 195,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 176,
+                  "id": 194,
                   "indexed": true,
                   "name": "owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 178,
-                  "src": "518:21:3",
+                  "scope": 196,
+                  "src": "464:21:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -736,10 +736,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 175,
+                    "id": 193,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "518:7:3",
+                    "src": "464:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -750,61 +750,61 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "517:23:3"
+              "src": "463:23:3"
             },
-            "src": "491:50:3"
+            "src": "437:50:3"
           },
           {
             "body": {
-              "id": 185,
+              "id": 203,
               "nodeType": "Block",
-              "src": "681:44:3",
+              "src": "627:44:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 183,
+                    "id": 201,
                     "name": "_restrictionsEnabled",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 174,
-                    "src": "698:20:3",
+                    "referencedDeclaration": 192,
+                    "src": "644:20:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 182,
-                  "id": 184,
+                  "functionReturnParameters": 200,
+                  "id": 202,
                   "nodeType": "Return",
-                  "src": "691:27:3"
+                  "src": "637:27:3"
                 }
               ]
             },
             "documentation": "View function to determine if restrictions are enabled",
-            "id": 186,
+            "id": 204,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isRestrictionEnabled",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 179,
+              "id": 197,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "651:2:3"
+              "src": "597:2:3"
             },
             "returnParameters": {
-              "id": 182,
+              "id": 200,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 181,
+                  "id": 199,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 186,
-                  "src": "675:4:3",
+                  "scope": 204,
+                  "src": "621:4:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -812,10 +812,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 180,
+                    "id": 198,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "675:4:3",
+                    "src": "621:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -825,19 +825,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "674:6:3"
+              "src": "620:6:3"
             },
-            "scope": 207,
-            "src": "622:103:3",
+            "scope": 225,
+            "src": "568:103:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 205,
+              "id": 223,
               "nodeType": "Block",
-              "src": "957:232:3",
+              "src": "903:232:3",
               "statements": [
                 {
                   "expression": {
@@ -845,12 +845,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 192,
+                        "id": 210,
                         "name": "_restrictionsEnabled",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 174,
-                        "src": "975:20:3",
+                        "referencedDeclaration": 192,
+                        "src": "921:20:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -859,14 +859,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "5265737472696374696f6e732061726520616c72656164792064697361626c65642e",
-                        "id": 193,
+                        "id": 211,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "997:36:3",
+                        "src": "943:36:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_aba37404dd0e45f4383877713ea0e585b7e8a33afff6c67906c8ef699631c47f",
@@ -886,21 +886,21 @@
                           "typeString": "literal_string \"Restrictions are already disabled.\""
                         }
                       ],
-                      "id": 191,
+                      "id": 209,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1607,
-                        1608
+                        1647,
+                        1648
                       ],
-                      "referencedDeclaration": 1608,
-                      "src": "967:7:3",
+                      "referencedDeclaration": 1648,
+                      "src": "913:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 194,
+                    "id": 212,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -908,32 +908,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "967:67:3",
+                    "src": "913:67:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 195,
+                  "id": 213,
                   "nodeType": "ExpressionStatement",
-                  "src": "967:67:3"
+                  "src": "913:67:3"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 198,
+                    "id": 216,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 196,
+                      "id": 214,
                       "name": "_restrictionsEnabled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 174,
-                      "src": "1077:20:3",
+                      "referencedDeclaration": 192,
+                      "src": "1023:20:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -944,14 +944,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 197,
+                      "id": 215,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1100:5:3",
+                      "src": "1046:5:3",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -959,15 +959,15 @@
                       },
                       "value": "false"
                     },
-                    "src": "1077:28:3",
+                    "src": "1023:28:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 199,
+                  "id": 217,
                   "nodeType": "ExpressionStatement",
-                  "src": "1077:28:3"
+                  "src": "1023:28:3"
                 },
                 {
                   "eventCall": {
@@ -977,18 +977,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 201,
+                          "id": 219,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1604,
-                          "src": "1171:3:3",
+                          "referencedDeclaration": 1644,
+                          "src": "1117:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 202,
+                        "id": 220,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -996,7 +996,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1171:10:3",
+                        "src": "1117:10:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -1010,18 +1010,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 200,
+                      "id": 218,
                       "name": "RestrictionsDisabled",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 178,
-                      "src": "1150:20:3",
+                      "referencedDeclaration": 196,
+                      "src": "1096:20:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 203,
+                    "id": 221,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1029,69 +1029,69 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1150:32:3",
+                    "src": "1096:32:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 204,
+                  "id": 222,
                   "nodeType": "EmitStatement",
-                  "src": "1145:37:3"
+                  "src": "1091:37:3"
                 }
               ]
             },
             "documentation": "Function to update the enabled flag on restrictions to disabled.  Only the owner should be able to call.\nThis is a permanent change that cannot be undone",
-            "id": 206,
+            "id": 224,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 189,
+                "id": 207,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 188,
+                  "id": 206,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 964,
-                  "src": "947:9:3",
+                  "referencedDeclaration": 1004,
+                  "src": "893:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "947:9:3"
+                "src": "893:9:3"
               }
             ],
             "name": "disableRestrictions",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 187,
+              "id": 205,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "937:2:3"
+              "src": "883:2:3"
             },
             "returnParameters": {
-              "id": 190,
+              "id": 208,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "957:0:3"
+              "src": "903:0:3"
             },
-            "scope": 207,
-            "src": "909:280:3",
+            "scope": 225,
+            "src": "855:280:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 208,
-        "src": "278:913:3"
+        "scope": 226,
+        "src": "224:913:3"
       }
     ],
-    "src": "0:1191:3"
+    "src": "0:1138:3"
   },
   "compiler": {
     "name": "solc",
@@ -1099,7 +1099,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-29T03:37:26.263Z",
+  "updatedAt": "2019-03-29T04:06:24.537Z",
   "devdoc": {
     "methods": {
       "isOwner()": {
@@ -1131,6 +1131,6 @@
         "notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
       }
     },
-    "notice": "This contract allows a restrictions to be enabled or disabled.  Only the owner of the contract can turn off or on the restrictions.  All restrictions start off in an enabled state."
+    "notice": "Restrictions start off as enabled. Once they are disabled, they cannot be re-enabled. Only the owner may disable restrictions."
   }
 }
