@@ -34,7 +34,7 @@ contract('Transfers', (accounts) => {
     // Try to send to account 2
     await shouldFail.reverting.withMessage(tokenInstance.transfer(accounts[2], 100, { from: accounts[5] }), FAILURE_NON_WHITELIST_MESSAGE)
 
-    // Approve a transfer from account0 and then try to spend it
+    // Approve a transfer from account 5 and then try to spend it from account 2
     await tokenInstance.approve(accounts[2], 100, { from: accounts[5] })
     await shouldFail.reverting.withMessage(tokenInstance.transferFrom(accounts[5], accounts[2], 100, { from: accounts[2] }), FAILURE_NON_WHITELIST_MESSAGE)
 
@@ -66,10 +66,10 @@ contract('Transfers', (accounts) => {
     // Remove account 2 from the white list
     await tokenInstance.removeFromWhitelist(accounts[2], { from: accounts[1] })
 
-    // Should fail trying to send back to account 0 from 2
+    // Should fail trying to send back to account 5 from 2
     await shouldFail.reverting.withMessage(tokenInstance.transfer(accounts[5], 100, { from: accounts[2] }), FAILURE_NON_WHITELIST_MESSAGE)
 
-    // Should fail with transfer from going back to account 0 from 2
+    // Should fail with approved transfer from going back to account 5 from 2 using approval
     await tokenInstance.approve(accounts[5], 100, { from: accounts[2] })
     await shouldFail.reverting.withMessage(tokenInstance.transferFrom(accounts[2], accounts[5], 100, { from: accounts[5] }), FAILURE_NON_WHITELIST_MESSAGE)
   })
