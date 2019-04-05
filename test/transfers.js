@@ -6,12 +6,12 @@ const FAILURE_NON_WHITELIST_MESSAGE = 'The transfer was restricted due to white 
 
 contract('Transfers', (accounts) => {
   it('should deploy', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
   })
 
   it('Should allow the owner to send to anyone regardless of whitelist', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
 
     // Set account 1 as an admin
     await tokenInstance.addAdmin(accounts[1])
@@ -23,7 +23,7 @@ contract('Transfers', (accounts) => {
   })
 
   it('Initial transfers should fail but succeed after white listing', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
 
     // Set account 1 as an admin
     await tokenInstance.addAdmin(accounts[1])

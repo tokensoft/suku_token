@@ -7,12 +7,12 @@ const FAILURE_INVALID_WHITELIST_MSG = 'Invalid whitelist ID supplied'
 
 contract('Whitelistable', (accounts) => {
   it('should deploy', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
   })
 
   it('should allow adding and removing an address to a whitelist', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
 
     // First allow acct 1 be an administrator
     await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
@@ -44,7 +44,7 @@ contract('Whitelistable', (accounts) => {
   })
 
   it('should only allow admins adding or removing on whitelists', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
 
     // Non admin should fail adding to white list
     await shouldFail.reverting(tokenInstance.addToWhitelist(accounts[2], 10, { from: accounts[4] }))
@@ -69,7 +69,7 @@ contract('Whitelistable', (accounts) => {
   })
 
   it('should validate if addresses are not on a whitelist', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
 
     // First allow acct 1 be an administrator
     await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
@@ -126,7 +126,7 @@ contract('Whitelistable', (accounts) => {
   })
 
   it('should trigger events', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
 
     // First allow acct 1 to be an administrator
     await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
@@ -146,7 +146,7 @@ contract('Whitelistable', (accounts) => {
   })
 
   it('should validate outbound whitelist enabled flag', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
 
     // Allow acct 1 to be an admin
     await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
@@ -193,7 +193,7 @@ contract('Whitelistable', (accounts) => {
   })
 
   it('should trigger events for whitelist enable/disable', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
 
     await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })
 
@@ -211,7 +211,7 @@ contract('Whitelistable', (accounts) => {
   })
 
   it('should not allow adding an address to invalid whitelist ID (0)', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
 
     // First allow acct 1 be an administrator
     await tokenInstance.addAdmin(accounts[1], { from: accounts[0] })

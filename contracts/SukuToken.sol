@@ -28,10 +28,11 @@ contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
     Constructor for the token to set readable details and mint all tokens
     to the contract creator.
      */
-    constructor() public 
+    constructor(address owner) public 
         ERC20Detailed(TOKEN_NAME, TOKEN_SYMBOL, TOKEN_DECIMALS)
     {		
-        _mint(msg.sender, TOKEN_SUPPLY);
+        _transferOwnership(owner);
+        _mint(owner, TOKEN_SUPPLY);
     }
 
     /**

@@ -4,9 +4,9 @@ const SukuToken = artifacts.require('SukuToken')
 /**
  * Sanity check for transferring ownership.  Most logic is fully tested in OpenZeppelin lib.
  */
-contract('Restrictable', (accounts) => {
+contract('Ownable', (accounts) => {
   it('should deploy', async () => {
-    const tokenInstance = await SukuToken.new()
+    const tokenInstance = await SukuToken.new(accounts[0])
     assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
 
     // Current owner
@@ -19,5 +19,14 @@ contract('Restrictable', (accounts) => {
     // Should have been updated
     owner = await tokenInstance.owner.call()
     assert.equal(owner, accounts[1], 'Updated owner should be account 1')
+  })
+
+  it('should deploy with a different owner', async () => {
+    const tokenInstance = await SukuToken.new(accounts[1])
+    assert.equal(tokenInstance !== null, true, 'Contract should be deployed')
+
+    // Current owner should not be the original caller
+    let owner = await tokenInstance.owner.call()
+    assert.equal(owner, accounts[1], 'Owner should be account 1')
   })
 })
