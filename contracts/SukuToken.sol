@@ -1,11 +1,12 @@
 pragma solidity 0.5.0;
 
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol";
 import "./Whitelistable.sol";
 import "./Restrictable.sol";
 import "./ERC1404.sol";
 
-contract SukuToken is ERC1404, ERC20Detailed, Whitelistable, Restrictable {
+contract SukuToken is ERC1404, ERC20, ERC20Detailed, Whitelistable, Restrictable {
 
     // Token Details
     string constant TOKEN_NAME = "SUKU";

@@ -1,8 +1,8 @@
 pragma solidity 0.5.0;
 
-import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
 
-contract ERC1404 is ERC20 {
+contract ERC1404 is IERC20 {
     /// @notice Detects if a transfer will be reverted and if so returns an appropriate reference code
     /// @param from Sending address
     /// @param to Receiving address

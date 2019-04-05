@@ -66,33 +66,10 @@
       "type": "function"
     },
     {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "spender",
-          "type": "address"
-        },
-        {
-          "name": "addedValue",
-          "type": "uint256"
-        }
-      ],
-      "name": "increaseAllowance",
-      "outputs": [
-        {
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
       "constant": true,
       "inputs": [
         {
-          "name": "owner",
+          "name": "who",
           "type": "address"
         }
       ],
@@ -105,29 +82,6 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "spender",
-          "type": "address"
-        },
-        {
-          "name": "subtractedValue",
-          "type": "uint256"
-        }
-      ],
-      "name": "decreaseAllowance",
-      "outputs": [
-        {
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
       "type": "function"
     },
     {
@@ -271,7 +225,7 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity 0.5.0;\n\nimport \"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\";\n\ncontract ERC1404 is ERC20 {\n    /// @notice Detects if a transfer will be reverted and if so returns an appropriate reference code\n    /// @param from Sending address\n    /// @param to Receiving address\n    /// @param value Amount of tokens being transferred\n    /// @return Code by which to reference message for rejection reasoning\n    /// @dev Overwrite with your custom transfer restriction logic\n    function detectTransferRestriction (address from, address to, uint256 value) public view returns (uint8);\n\n    /// @notice Returns a human-readable message for a given restriction code\n    /// @param restrictionCode Identifier for looking up a message\n    /// @return Text showing the restriction's reasoning\n    /// @dev Overwrite with your custom message and restrictionCode handling\n    function messageForTransferRestriction (uint8 restrictionCode) public view returns (string memory);\n}",
+  "source": "pragma solidity 0.5.0;\n\nimport \"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\";\n\ncontract ERC1404 is IERC20 {\n    /// @notice Detects if a transfer will be reverted and if so returns an appropriate reference code\n    /// @param from Sending address\n    /// @param to Receiving address\n    /// @param value Amount of tokens being transferred\n    /// @return Code by which to reference message for rejection reasoning\n    /// @dev Overwrite with your custom transfer restriction logic\n    function detectTransferRestriction (address from, address to, uint256 value) public view returns (uint8);\n\n    /// @notice Returns a human-readable message for a given restriction code\n    /// @param restrictionCode Identifier for looking up a message\n    /// @return Text showing the restriction's reasoning\n    /// @dev Overwrite with your custom message and restrictionCode handling\n    function messageForTransferRestriction (uint8 restrictionCode) public view returns (string memory);\n}",
   "sourcePath": "/Users/james/Source/tokensoft/suku_token/contracts/ERC1404.sol",
   "ast": {
     "absolutePath": "/Users/james/Source/tokensoft/suku_token/contracts/ERC1404.sol",
@@ -294,13 +248,18 @@
         "src": "0:22:1"
       },
       {
-        "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
-        "file": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+        "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+        "file": "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
         "id": 106,
         "nodeType": "ImportDirective",
         "scope": 128,
+<<<<<<< HEAD
         "sourceUnit": 1508,
         "src": "24:63:1",
+=======
+        "sourceUnit": 1633,
+        "src": "24:64:1",
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -311,23 +270,35 @@
             "baseName": {
               "contractScope": null,
               "id": 107,
-              "name": "ERC20",
+              "name": "IERC20",
               "nodeType": "UserDefinedTypeName",
+<<<<<<< HEAD
               "referencedDeclaration": 1507,
               "src": "109:5:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_ERC20_$1507",
                 "typeString": "contract ERC20"
+=======
+              "referencedDeclaration": 1632,
+              "src": "110:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$1632",
+                "typeString": "contract IERC20"
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
               }
             },
             "id": 108,
             "nodeType": "InheritanceSpecifier",
-            "src": "109:5:1"
+            "src": "110:6:1"
           }
         ],
         "contractDependencies": [
+<<<<<<< HEAD
           1507,
           1634
+=======
+          1632
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -335,8 +306,12 @@
         "id": 127,
         "linearizedBaseContracts": [
           127,
+<<<<<<< HEAD
           1507,
           1634
+=======
+          1632
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         ],
         "name": "ERC1404",
         "nodeType": "ContractDefinition",
@@ -360,7 +335,7 @@
                   "name": "from",
                   "nodeType": "VariableDeclaration",
                   "scope": 119,
-                  "src": "530:12:1",
+                  "src": "532:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -371,7 +346,7 @@
                     "id": 109,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "530:7:1",
+                    "src": "532:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -387,7 +362,7 @@
                   "name": "to",
                   "nodeType": "VariableDeclaration",
                   "scope": 119,
-                  "src": "544:10:1",
+                  "src": "546:10:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -398,7 +373,7 @@
                     "id": 111,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "544:7:1",
+                    "src": "546:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -414,7 +389,7 @@
                   "name": "value",
                   "nodeType": "VariableDeclaration",
                   "scope": 119,
-                  "src": "556:13:1",
+                  "src": "558:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -425,7 +400,7 @@
                     "id": 113,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "556:7:1",
+                    "src": "558:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -435,7 +410,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "529:41:1"
+              "src": "531:41:1"
             },
             "returnParameters": {
               "id": 118,
@@ -447,7 +422,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 119,
-                  "src": "592:5:1",
+                  "src": "594:5:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -458,7 +433,7 @@
                     "id": 116,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "592:5:1",
+                    "src": "594:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -468,10 +443,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "591:7:1"
+              "src": "593:7:1"
             },
             "scope": 127,
-            "src": "494:105:1",
+            "src": "496:105:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -495,7 +470,7 @@
                   "name": "restrictionCode",
                   "nodeType": "VariableDeclaration",
                   "scope": 126,
-                  "src": "924:21:1",
+                  "src": "926:21:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -506,7 +481,7 @@
                     "id": 120,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "924:5:1",
+                    "src": "926:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -516,7 +491,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "923:23:1"
+              "src": "925:23:1"
             },
             "returnParameters": {
               "id": 125,
@@ -528,7 +503,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 126,
-                  "src": "968:13:1",
+                  "src": "970:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -539,7 +514,7 @@
                     "id": 123,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "968:6:1",
+                    "src": "970:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -549,20 +524,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "967:15:1"
+              "src": "969:15:1"
             },
             "scope": 127,
-            "src": "884:99:1",
+            "src": "886:99:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 128,
-        "src": "89:896:1"
+        "src": "90:897:1"
       }
     ],
-    "src": "0:985:1"
+    "src": "0:987:1"
   },
   "legacyAST": {
     "absolutePath": "/Users/james/Source/tokensoft/suku_token/contracts/ERC1404.sol",
@@ -585,13 +560,18 @@
         "src": "0:22:1"
       },
       {
-        "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
-        "file": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+        "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+        "file": "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
         "id": 106,
         "nodeType": "ImportDirective",
         "scope": 128,
+<<<<<<< HEAD
         "sourceUnit": 1508,
         "src": "24:63:1",
+=======
+        "sourceUnit": 1633,
+        "src": "24:64:1",
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -602,23 +582,35 @@
             "baseName": {
               "contractScope": null,
               "id": 107,
-              "name": "ERC20",
+              "name": "IERC20",
               "nodeType": "UserDefinedTypeName",
+<<<<<<< HEAD
               "referencedDeclaration": 1507,
               "src": "109:5:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_ERC20_$1507",
                 "typeString": "contract ERC20"
+=======
+              "referencedDeclaration": 1632,
+              "src": "110:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$1632",
+                "typeString": "contract IERC20"
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
               }
             },
             "id": 108,
             "nodeType": "InheritanceSpecifier",
-            "src": "109:5:1"
+            "src": "110:6:1"
           }
         ],
         "contractDependencies": [
+<<<<<<< HEAD
           1507,
           1634
+=======
+          1632
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -626,8 +618,12 @@
         "id": 127,
         "linearizedBaseContracts": [
           127,
+<<<<<<< HEAD
           1507,
           1634
+=======
+          1632
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         ],
         "name": "ERC1404",
         "nodeType": "ContractDefinition",
@@ -651,7 +647,7 @@
                   "name": "from",
                   "nodeType": "VariableDeclaration",
                   "scope": 119,
-                  "src": "530:12:1",
+                  "src": "532:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -662,7 +658,7 @@
                     "id": 109,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "530:7:1",
+                    "src": "532:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -678,7 +674,7 @@
                   "name": "to",
                   "nodeType": "VariableDeclaration",
                   "scope": 119,
-                  "src": "544:10:1",
+                  "src": "546:10:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -689,7 +685,7 @@
                     "id": 111,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "544:7:1",
+                    "src": "546:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -705,7 +701,7 @@
                   "name": "value",
                   "nodeType": "VariableDeclaration",
                   "scope": 119,
-                  "src": "556:13:1",
+                  "src": "558:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -716,7 +712,7 @@
                     "id": 113,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "556:7:1",
+                    "src": "558:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -726,7 +722,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "529:41:1"
+              "src": "531:41:1"
             },
             "returnParameters": {
               "id": 118,
@@ -738,7 +734,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 119,
-                  "src": "592:5:1",
+                  "src": "594:5:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -749,7 +745,7 @@
                     "id": 116,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "592:5:1",
+                    "src": "594:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -759,10 +755,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "591:7:1"
+              "src": "593:7:1"
             },
             "scope": 127,
-            "src": "494:105:1",
+            "src": "496:105:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -786,7 +782,7 @@
                   "name": "restrictionCode",
                   "nodeType": "VariableDeclaration",
                   "scope": 126,
-                  "src": "924:21:1",
+                  "src": "926:21:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -797,7 +793,7 @@
                     "id": 120,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "924:5:1",
+                    "src": "926:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -807,7 +803,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "923:23:1"
+              "src": "925:23:1"
             },
             "returnParameters": {
               "id": 125,
@@ -819,7 +815,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 126,
-                  "src": "968:13:1",
+                  "src": "970:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -830,7 +826,7 @@
                     "id": 123,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "968:6:1",
+                    "src": "970:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -840,20 +836,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "967:15:1"
+              "src": "969:15:1"
             },
             "scope": 127,
-            "src": "884:99:1",
+            "src": "886:99:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 128,
-        "src": "89:896:1"
+        "src": "90:897:1"
       }
     ],
-    "src": "0:985:1"
+    "src": "0:987:1"
   },
   "compiler": {
     "name": "solc",
@@ -861,38 +857,13 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
+<<<<<<< HEAD
   "updatedAt": "2019-04-05T22:25:37.174Z",
+=======
+  "updatedAt": "2019-03-29T04:10:22.715Z",
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
   "devdoc": {
     "methods": {
-      "allowance(address,address)": {
-        "details": "Function to check the amount of tokens that an owner allowed to a spender.",
-        "params": {
-          "owner": "address The address which owns the funds.",
-          "spender": "address The address which will spend the funds."
-        },
-        "return": "A uint256 specifying the amount of tokens still available for the spender."
-      },
-      "approve(address,uint256)": {
-        "details": "Approve the passed address to spend the specified amount of tokens on behalf of msg.sender. Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729",
-        "params": {
-          "spender": "The address which will spend the funds.",
-          "value": "The amount of tokens to be spent."
-        }
-      },
-      "balanceOf(address)": {
-        "details": "Gets the balance of the specified address.",
-        "params": {
-          "owner": "The address to query the balance of."
-        },
-        "return": "An uint256 representing the amount owned by the passed address."
-      },
-      "decreaseAllowance(address,uint256)": {
-        "details": "Decrease the amount of tokens that an owner allowed to a spender. approve should be called when allowed_[_spender] == 0. To decrement allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol Emits an Approval event.",
-        "params": {
-          "spender": "The address which will spend the funds.",
-          "subtractedValue": "The amount of tokens to decrease the allowance by."
-        }
-      },
       "detectTransferRestriction(address,address,uint256)": {
         "details": "Overwrite with your custom transfer restriction logic",
         "params": {
@@ -902,37 +873,12 @@
         },
         "return": "Code by which to reference message for rejection reasoning"
       },
-      "increaseAllowance(address,uint256)": {
-        "details": "Increase the amount of tokens that an owner allowed to a spender. approve should be called when allowed_[_spender] == 0. To increment allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol Emits an Approval event.",
-        "params": {
-          "addedValue": "The amount of tokens to increase the allowance by.",
-          "spender": "The address which will spend the funds."
-        }
-      },
       "messageForTransferRestriction(uint8)": {
         "details": "Overwrite with your custom message and restrictionCode handling",
         "params": {
           "restrictionCode": "Identifier for looking up a message"
         },
         "return": "Text showing the restriction's reasoning"
-      },
-      "totalSupply()": {
-        "details": "Total number of tokens in existence"
-      },
-      "transfer(address,uint256)": {
-        "details": "Transfer token for a specified address",
-        "params": {
-          "to": "The address to transfer to.",
-          "value": "The amount to be transferred."
-        }
-      },
-      "transferFrom(address,address,uint256)": {
-        "details": "Transfer tokens from one address to another. Note that while this function emits an Approval event, this is not required as per the specification, and other compliant implementations may not emit the event.",
-        "params": {
-          "from": "address The address which you want to send tokens from",
-          "to": "address The address which you want to transfer to",
-          "value": "uint256 the amount of tokens to be transferred"
-        }
       }
     }
   },

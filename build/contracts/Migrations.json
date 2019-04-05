@@ -182,7 +182,11 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
+<<<<<<< HEAD
                         "referencedDeclaration": 1649,
+=======
+                        "referencedDeclaration": 1647,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                         "src": "155:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -286,7 +290,11 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
+<<<<<<< HEAD
                         "referencedDeclaration": 1649,
+=======
+                        "referencedDeclaration": 1647,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                         "src": "229:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -827,7 +835,11 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
+<<<<<<< HEAD
                         "referencedDeclaration": 1649,
+=======
+                        "referencedDeclaration": 1647,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                         "src": "155:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -931,7 +943,11 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
+<<<<<<< HEAD
                         "referencedDeclaration": 1649,
+=======
+                        "referencedDeclaration": 1647,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                         "src": "229:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1366,7 +1382,11 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
+<<<<<<< HEAD
   "updatedAt": "2019-04-05T22:25:37.174Z",
+=======
+  "updatedAt": "2019-03-29T04:10:22.715Z",
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
   "devdoc": {
     "methods": {}
   },

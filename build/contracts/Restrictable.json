@@ -137,7 +137,11 @@
         "id": 187,
         "nodeType": "ImportDirective",
         "scope": 226,
+<<<<<<< HEAD
         "sourceUnit": 1076,
+=======
+        "sourceUnit": 1074,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         "src": "24:63:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -151,10 +155,17 @@
               "id": 188,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
+<<<<<<< HEAD
               "referencedDeclaration": 1075,
               "src": "249:7:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_Ownable_$1075",
+=======
+              "referencedDeclaration": 1073,
+              "src": "249:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$1073",
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                 "typeString": "contract Ownable"
               }
             },
@@ -164,7 +175,11 @@
           }
         ],
         "contractDependencies": [
+<<<<<<< HEAD
           1075
+=======
+          1073
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         ],
         "contractKind": "contract",
         "documentation": "Restrictions start off as enabled.\nOnce they are disabled, they cannot be re-enabled.\nOnly the owner may disable restrictions.",
@@ -172,7 +187,11 @@
         "id": 225,
         "linearizedBaseContracts": [
           225,
+<<<<<<< HEAD
           1075
+=======
+          1073
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         ],
         "name": "Restrictable",
         "nodeType": "ContractDefinition",
@@ -399,10 +418,17 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
+<<<<<<< HEAD
                         1652,
                         1653
                       ],
                       "referencedDeclaration": 1653,
+=======
+                        1650,
+                        1651
+                      ],
+                      "referencedDeclaration": 1651,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                       "src": "913:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -490,7 +516,11 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
+<<<<<<< HEAD
                           "referencedDeclaration": 1649,
+=======
+                          "referencedDeclaration": 1647,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                           "src": "1117:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -564,7 +594,11 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
+<<<<<<< HEAD
                   "referencedDeclaration": 1009,
+=======
+                  "referencedDeclaration": 1007,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                   "src": "893:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -628,7 +662,11 @@
         "id": 187,
         "nodeType": "ImportDirective",
         "scope": 226,
+<<<<<<< HEAD
         "sourceUnit": 1076,
+=======
+        "sourceUnit": 1074,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         "src": "24:63:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -642,10 +680,17 @@
               "id": 188,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
+<<<<<<< HEAD
               "referencedDeclaration": 1075,
               "src": "249:7:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_Ownable_$1075",
+=======
+              "referencedDeclaration": 1073,
+              "src": "249:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$1073",
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                 "typeString": "contract Ownable"
               }
             },
@@ -655,7 +700,11 @@
           }
         ],
         "contractDependencies": [
+<<<<<<< HEAD
           1075
+=======
+          1073
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         ],
         "contractKind": "contract",
         "documentation": "Restrictions start off as enabled.\nOnce they are disabled, they cannot be re-enabled.\nOnly the owner may disable restrictions.",
@@ -663,7 +712,11 @@
         "id": 225,
         "linearizedBaseContracts": [
           225,
+<<<<<<< HEAD
           1075
+=======
+          1073
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         ],
         "name": "Restrictable",
         "nodeType": "ContractDefinition",
@@ -890,10 +943,17 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
+<<<<<<< HEAD
                         1652,
                         1653
                       ],
                       "referencedDeclaration": 1653,
+=======
+                        1650,
+                        1651
+                      ],
+                      "referencedDeclaration": 1651,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                       "src": "913:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -981,7 +1041,11 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
+<<<<<<< HEAD
                           "referencedDeclaration": 1649,
+=======
+                          "referencedDeclaration": 1647,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                           "src": "1117:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1055,7 +1119,11 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
+<<<<<<< HEAD
                   "referencedDeclaration": 1009,
+=======
+                  "referencedDeclaration": 1007,
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
                   "src": "893:9:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1099,7 +1167,11 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
+<<<<<<< HEAD
   "updatedAt": "2019-04-05T22:25:37.174Z",
+=======
+  "updatedAt": "2019-03-29T04:10:22.715Z",
+>>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
   "devdoc": {
     "methods": {
       "isOwner()": {
