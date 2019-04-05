@@ -202,11 +202,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 104,
-<<<<<<< HEAD
-        "sourceUnit": 1076,
-=======
-        "sourceUnit": 1074,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+        "sourceUnit": 1079,
         "src": "24:63:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -220,17 +216,10 @@
               "id": 3,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-<<<<<<< HEAD
-              "referencedDeclaration": 1075,
+              "referencedDeclaration": 1078,
               "src": "348:7:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1075",
-=======
-              "referencedDeclaration": 1073,
-              "src": "348:7:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1073",
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                "typeIdentifier": "t_contract$_Ownable_$1078",
                 "typeString": "contract Ownable"
               }
             },
@@ -240,11 +229,7 @@
           }
         ],
         "contractDependencies": [
-<<<<<<< HEAD
-          1075
-=======
-          1073
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+          1078
         ],
         "contractKind": "contract",
         "documentation": "This contract allows a list of administrators to be tracked.  This list can then be enforced\non functions with administrative permissions.  Only the owner of the contract should be allowed\nto modify the administrator list.",
@@ -252,11 +237,7 @@
         "id": 103,
         "linearizedBaseContracts": [
           103,
-<<<<<<< HEAD
-          1075
-=======
-          1073
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+          1078
         ],
         "name": "Administratable",
         "nodeType": "ContractDefinition",
@@ -469,11 +450,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-<<<<<<< HEAD
-                              "referencedDeclaration": 1649,
-=======
-                              "referencedDeclaration": 1647,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                              "referencedDeclaration": 1652,
                               "src": "849:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -561,17 +538,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-<<<<<<< HEAD
-                        1652,
-                        1653
+                        1655,
+                        1656
                       ],
-                      "referencedDeclaration": 1653,
-=======
-                        1650,
-                        1651
-                      ],
-                      "referencedDeclaration": 1651,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                      "referencedDeclaration": 1656,
                       "src": "825:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -871,17 +841,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-<<<<<<< HEAD
-                        1652,
-                        1653
+                        1655,
+                        1656
                       ],
-                      "referencedDeclaration": 1653,
-=======
-                        1650,
-                        1651
-                      ],
-                      "referencedDeclaration": 1651,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                      "referencedDeclaration": 1656,
                       "src": "1371:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1009,11 +972,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-<<<<<<< HEAD
-                          "referencedDeclaration": 1649,
-=======
-                          "referencedDeclaration": 1647,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                          "referencedDeclaration": 1652,
                           "src": "1686:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1091,11 +1050,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-<<<<<<< HEAD
-                  "referencedDeclaration": 1009,
-=======
-                  "referencedDeclaration": 1007,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                  "referencedDeclaration": 1012,
                   "src": "1297:9:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1275,17 +1230,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-<<<<<<< HEAD
-                        1652,
-                        1653
+                        1655,
+                        1656
                       ],
-                      "referencedDeclaration": 1653,
-=======
-                        1650,
-                        1651
-                      ],
-                      "referencedDeclaration": 1651,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                      "referencedDeclaration": 1656,
                       "src": "1934:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1413,11 +1361,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-<<<<<<< HEAD
-                          "referencedDeclaration": 1649,
-=======
-                          "referencedDeclaration": 1647,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                          "referencedDeclaration": 1652,
                           "src": "2275:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1495,11 +1439,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-<<<<<<< HEAD
-                  "referencedDeclaration": 1009,
-=======
-                  "referencedDeclaration": 1007,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                  "referencedDeclaration": 1012,
                   "src": "1872:9:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1591,11 +1531,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 104,
-<<<<<<< HEAD
-        "sourceUnit": 1076,
-=======
-        "sourceUnit": 1074,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+        "sourceUnit": 1079,
         "src": "24:63:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1609,17 +1545,10 @@
               "id": 3,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-<<<<<<< HEAD
-              "referencedDeclaration": 1075,
+              "referencedDeclaration": 1078,
               "src": "348:7:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1075",
-=======
-              "referencedDeclaration": 1073,
-              "src": "348:7:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1073",
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                "typeIdentifier": "t_contract$_Ownable_$1078",
                 "typeString": "contract Ownable"
               }
             },
@@ -1629,11 +1558,7 @@
           }
         ],
         "contractDependencies": [
-<<<<<<< HEAD
-          1075
-=======
-          1073
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+          1078
         ],
         "contractKind": "contract",
         "documentation": "This contract allows a list of administrators to be tracked.  This list can then be enforced\non functions with administrative permissions.  Only the owner of the contract should be allowed\nto modify the administrator list.",
@@ -1641,11 +1566,7 @@
         "id": 103,
         "linearizedBaseContracts": [
           103,
-<<<<<<< HEAD
-          1075
-=======
-          1073
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+          1078
         ],
         "name": "Administratable",
         "nodeType": "ContractDefinition",
@@ -1858,11 +1779,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-<<<<<<< HEAD
-                              "referencedDeclaration": 1649,
-=======
-                              "referencedDeclaration": 1647,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                              "referencedDeclaration": 1652,
                               "src": "849:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1950,17 +1867,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-<<<<<<< HEAD
-                        1652,
-                        1653
+                        1655,
+                        1656
                       ],
-                      "referencedDeclaration": 1653,
-=======
-                        1650,
-                        1651
-                      ],
-                      "referencedDeclaration": 1651,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                      "referencedDeclaration": 1656,
                       "src": "825:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2260,17 +2170,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-<<<<<<< HEAD
-                        1652,
-                        1653
+                        1655,
+                        1656
                       ],
-                      "referencedDeclaration": 1653,
-=======
-                        1650,
-                        1651
-                      ],
-                      "referencedDeclaration": 1651,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                      "referencedDeclaration": 1656,
                       "src": "1371:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2398,11 +2301,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-<<<<<<< HEAD
-                          "referencedDeclaration": 1649,
-=======
-                          "referencedDeclaration": 1647,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                          "referencedDeclaration": 1652,
                           "src": "1686:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2480,11 +2379,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-<<<<<<< HEAD
-                  "referencedDeclaration": 1009,
-=======
-                  "referencedDeclaration": 1007,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                  "referencedDeclaration": 1012,
                   "src": "1297:9:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2664,17 +2559,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-<<<<<<< HEAD
-                        1652,
-                        1653
+                        1655,
+                        1656
                       ],
-                      "referencedDeclaration": 1653,
-=======
-                        1650,
-                        1651
-                      ],
-                      "referencedDeclaration": 1651,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                      "referencedDeclaration": 1656,
                       "src": "1934:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2802,11 +2690,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-<<<<<<< HEAD
-                          "referencedDeclaration": 1649,
-=======
-                          "referencedDeclaration": 1647,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                          "referencedDeclaration": 1652,
                           "src": "2275:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2884,11 +2768,7 @@
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-<<<<<<< HEAD
-                  "referencedDeclaration": 1009,
-=======
-                  "referencedDeclaration": 1007,
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+                  "referencedDeclaration": 1012,
                   "src": "1872:9:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2960,11 +2840,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-<<<<<<< HEAD
-  "updatedAt": "2019-04-05T22:25:37.173Z",
-=======
-  "updatedAt": "2019-03-29T04:10:22.714Z",
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+  "updatedAt": "2019-04-05T22:34:39.194Z",
   "devdoc": {
     "methods": {
       "isOwner()": {

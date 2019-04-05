@@ -253,13 +253,8 @@
         "id": 106,
         "nodeType": "ImportDirective",
         "scope": 128,
-<<<<<<< HEAD
-        "sourceUnit": 1508,
-        "src": "24:63:1",
-=======
-        "sourceUnit": 1633,
+        "sourceUnit": 1638,
         "src": "24:64:1",
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -272,19 +267,11 @@
               "id": 107,
               "name": "IERC20",
               "nodeType": "UserDefinedTypeName",
-<<<<<<< HEAD
-              "referencedDeclaration": 1507,
-              "src": "109:5:1",
-              "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20_$1507",
-                "typeString": "contract ERC20"
-=======
-              "referencedDeclaration": 1632,
+              "referencedDeclaration": 1637,
               "src": "110:6:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC20_$1632",
+                "typeIdentifier": "t_contract$_IERC20_$1637",
                 "typeString": "contract IERC20"
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
               }
             },
             "id": 108,
@@ -293,12 +280,7 @@
           }
         ],
         "contractDependencies": [
-<<<<<<< HEAD
-          1507,
-          1634
-=======
-          1632
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+          1637
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -306,12 +288,7 @@
         "id": 127,
         "linearizedBaseContracts": [
           127,
-<<<<<<< HEAD
-          1507,
-          1634
-=======
-          1632
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+          1637
         ],
         "name": "ERC1404",
         "nodeType": "ContractDefinition",
@@ -565,13 +542,8 @@
         "id": 106,
         "nodeType": "ImportDirective",
         "scope": 128,
-<<<<<<< HEAD
-        "sourceUnit": 1508,
-        "src": "24:63:1",
-=======
-        "sourceUnit": 1633,
+        "sourceUnit": 1638,
         "src": "24:64:1",
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -584,19 +556,11 @@
               "id": 107,
               "name": "IERC20",
               "nodeType": "UserDefinedTypeName",
-<<<<<<< HEAD
-              "referencedDeclaration": 1507,
-              "src": "109:5:1",
-              "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20_$1507",
-                "typeString": "contract ERC20"
-=======
-              "referencedDeclaration": 1632,
+              "referencedDeclaration": 1637,
               "src": "110:6:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC20_$1632",
+                "typeIdentifier": "t_contract$_IERC20_$1637",
                 "typeString": "contract IERC20"
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
               }
             },
             "id": 108,
@@ -605,12 +569,7 @@
           }
         ],
         "contractDependencies": [
-<<<<<<< HEAD
-          1507,
-          1634
-=======
-          1632
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+          1637
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -618,12 +577,7 @@
         "id": 127,
         "linearizedBaseContracts": [
           127,
-<<<<<<< HEAD
-          1507,
-          1634
-=======
-          1632
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+          1637
         ],
         "name": "ERC1404",
         "nodeType": "ContractDefinition",
@@ -857,11 +811,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-<<<<<<< HEAD
-  "updatedAt": "2019-04-05T22:25:37.174Z",
-=======
-  "updatedAt": "2019-03-29T04:10:22.715Z",
->>>>>>> 054074181bb65cbc7d156edee767b0c2ec1f961b
+  "updatedAt": "2019-04-05T22:34:39.194Z",
   "devdoc": {
     "methods": {
       "detectTransferRestriction(address,address,uint256)": {
