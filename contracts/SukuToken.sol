@@ -13,9 +13,9 @@ contract SukuToken is ERC1404, ERC20, ERC20Detailed, Whitelistable, Restrictable
     string constant TOKEN_SYMBOL = "SUKU";
     uint8 constant TOKEN_DECIMALS = 18;
 
-    // Token supply - 50 Billion Tokens, with 18 decimal precision
-    uint256 constant BILLION = 1000000000;
-    uint256 constant TOKEN_SUPPLY = 50 * BILLION * (10 ** uint256(TOKEN_DECIMALS));
+    // Token supply - 1.5 Billion Tokens, with 18 decimal precision
+    uint256 constant HUNDRED_MILLION = 100000000;
+    uint256 constant TOKEN_SUPPLY = 15 * HUNDRED_MILLION * (10 ** uint256(TOKEN_DECIMALS));
 
     // ERC1404 Error codes and messages
     uint8 public constant SUCCESS_CODE = 0;
